@@ -2,63 +2,102 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>FRcion</title>
+    <title>首页</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
+<!--头部-->
 <header class="header">
     <div class="header-left">
         <span>欢迎来到FRcion</span>
     </div>
     <div class="header-right">
-        <a href="#" class="none">
-            <img src="../images/keys-1.png">
-        </a>
-        <select class="language none">
-            <option>English</option>
-            <option>中文</option>
-        </select>
-       <div style="display:inline-block">
-           <a href="#">登录</a>
-           <span></span>
-           <a href="#">注册</a>
-       </div>
+        <div>
+            <a href="#" class="none">
+                <img src="../images/keys-1.png">
+            </a>
+            <select class="language none">
+                <option>English</option>
+                <option>中文</option>
+            </select>
+        </div>
+        <div class="flex">
+            <div>
+                <a href="./login.html">登录</a>
+                <span></span>
+                <a href="register.html">注册</a>
+            </div>
+            <div class="hides">
+                <a href="#">用户名</a>
+                <span></span>
+                <a href="#" class="out">退出</a>
+            </div>
+            <div>
+                <nav class="navbar navbar-default none" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <span class="sr-only">切换导航</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li  class="show"><a href="#"><img src="../images/keys-1.png"></a></li>
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">交易中心</a></li>
+                                <li><a href="#">超级分红</a></li>
+                                <li><a href="#">用户中心</a></li>
+                                <li><a href="#">帮助中心</a></li>
+                                <li><a href="#">最新动态</a></li>
+                                <li><a href="#">行情中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </div>
 </header>
-<div class="container">
-    <div class="row">
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target="#example-navbar-collapse">
-                        <span class="sr-only">切换导航</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li  class="show"><a href="#"><img src="../images/keys-1.png"></a></li>
-                        <li><a href="#">首页</a></li>
-                        <li><a href="#">交易中心</a></li>
-                        <li><a href="#">超级分红</a></li>
-                        <li><a href="#">用户中心</a></li>
-                        <li><a href="#">帮助中心</a></li>
-                        <li><a href="#">最新动态</a></li>
-                        <li><a href="#">行情中心</a></li>
-                        <select class="language">
-                            <option>English</option>
-                            <option>中文</option>
-                        </select>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+<!--头部 end-->
+
+<!--导航栏-->
+<nav class="navbar navbar-default show" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <a href="#" class="logo"><img src="../images/keys-1.png"></a>
+            <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">交易中心</a></li>
+                <li><a href="#">超级分红</a></li>
+                <li><a href="#">用户中心</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">最新动态</a></li>
+                <li><a href="#">行情中心</a></li>
+                <select class="language">
+                    <option>English</option>
+                    <option>中文</option>
+                </select>
+            </ul>
+        </div>
     </div>
-</div>
+</nav>
+<!--导航栏 end-->
+
+<!--内容-->
 <main class="main">
     <div class="head">
         <div>欢迎来到FRcion</div>
@@ -133,25 +172,13 @@
             <div class="title">
                 <p>友情链接</p>
             </div>
-            <div class="link">
-                <div>
-                    <img src="../images/code.png">
-                </div>
-                <div>
-                    <img src="../images/code.png">
-                </div>
-                <div>
-                    <img src="../images/code.png">
-                </div>
-                <div>
-                    <img src="../images/code.png">
-                </div>
-                <div>
-                    <img src="../images/code.png">
-                </div>
-                <div>
-                    <img src="../images/code.png">
-                </div>
+            <div class="partner">
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
+                <div class="col-md-2 col-sm-4 col-xs-6 link"></div>
             </div>
             <div class="warning">
                 <p> 风险提示：</p>
@@ -160,6 +187,8 @@
         </div>
    </div>
 </main>
+<!--内容 end-->
+
 <!--尾部-->
 <footer class="footer">
     <div class="footer-left"></div>
