@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>注册新用户</title>
+    <title>行情中心</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/mod_header_footer.css">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/market.css">
 </head>
 <body>
 <!--头部-->
@@ -15,7 +15,7 @@
     </div>
     <div class="header-right">
         <div>
-            <a href="home.html" class="none">
+            <a href="#" class="none">
                 <img src="../images/keys-1.png">
             </a>
             <select class="language none">
@@ -25,7 +25,7 @@
         </div>
         <div class="flex">
             <div>
-                <a href="login.html">登录</a>
+                <a href="./login.html">登录</a>
                 <span></span>
                 <a href="register.html">注册</a>
             </div>
@@ -84,7 +84,7 @@
                 <li><a href="users.html">用户中心</a></li>
                 <li><a href="help.html">帮助中心</a></li>
                 <li><a href="news.html">最新动态</a></li>
-                <li><a href="market.html">行情中心</a></li>
+                <li><a href="market.html" id="market">行情中心</a></li>
                 <select class="language">
                     <option>English</option>
                     <option>中文</option>
@@ -96,130 +96,6 @@
 <!--导航栏 end-->
 
 <!--内容-->
-<main class="main">
-    <div class="main-box">
-        <p class="main-head">注册新用户</p>
-        <div class="main-body">
-            <div class="step">
-                <div class="step-top">
-                    <div class="num bg-white1">1</div>
-                    <span class="color-white1">手机号注册</span>
-                    <span class="line bg-white1"></span>
-                    <div class="num bg-white2">2</div>
-                    <span class="color-white2">设置交易密码</span>
-                    <span class="line bg-white2"></span>
-                </div>
-                <div class="step-bottom">
-                    <div class="num bg-white3">3</div>
-                    <span class="color-white3">实名认证</span>
-                    <span class="line bg-white3"></span>
-                    <div class="num bg-white4">4</div>
-                    <span class="color-white4">注册成功</span>
-                </div>
-            </div>
-            <div id="set1" class="set1">
-                <div class="password">
-                    <span>手机号</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>登录密码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>确认登录密码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>邀请码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span></span>
-                        <span class="agree">
-                            <input type="checkbox">
-                            我同意Free Realms<a href="protocol.html">《服务协议》</a>
-                    </span>
-                </div>
-                <a href="#" type="button" id="submit1" class="btn submit">下一步</a>
-            </div>
-            <div id="set2" class="set2">
-                <div class="warning">
-                    <p><img src="../images/warning.png">为保障您的资金安全，请设置交易密码。</p>
-                    <p>对账户资产进行投资、交易、转出时，需用到交易密码，请务必牢记。</p>
-                </div>
-                <div class="password">
-                    <span>交易密码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>确认交易密码</span>
-                    <input type="text" class="btn">
-                </div>
-                <a href="#" type="button" id="submit2" class="btn submit">下一步</a>
-            </div>
-            <div id="set3" class="set3">
-                <div class="warning">
-                    <p><img src="../images/warning.png">为了确保您的资金安全，请实名认证。</p>
-                </div>
-                <div class="password">
-                    <span>昵称</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>真实姓名</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>证件类型</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>证件号码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>手机号码</span>
-                    <input type="text" class="btn">
-                </div>
-                <div class="password">
-                    <span>验证码</span>
-                    <span class="verify">
-                        <input type="text" class="btn">
-                        <img alt="验证码">
-                    </span>
-                </div>
-                <a href="#" type="button" id="submit3" class="btn submit">下一步</a>
-            </div>
-            <div id="set4" class="set4">
-                <div class="warning">
-                    <p>注册成功</p>
-                </div>
-                <div class="password">
-                    <span>昵称</span>
-                    <span class="message">artMan</span>
-                </div>
-                <div class="password">
-                    <span>真实姓名</span>
-                    <span class="message">奥特曼</span>
-                </div>
-                <div class="password">
-                    <span>证件类型</span>
-                    <span class="message">身份证</span>
-                </div>
-                <div class="password">
-                    <span>证件号码</span>
-                    <span class="message">410112199001010011</span>
-                </div>
-                <div class="password">
-                    <span>手机号码</span>
-                    <span class="message">15888888888</span>
-                </div>
-                <a href="login.html" type="button" id="submit4" class="btn submit">立即登录</a>
-            </div>
-        </div>
-    </div>
-</main>
 <!--内容 end-->
 
 <!--在线客服浮动窗口-->
@@ -309,7 +185,7 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../component/state-machine.js"></script>
-<script src="../js/register.js"></script>
+<script src="../js/home.js"></script>
+<script src="../js/market.js"></script>
 </body>
 </html>

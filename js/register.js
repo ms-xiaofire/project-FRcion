@@ -23,4 +23,14 @@ $(document).ready(function () {
         $('.bg-white4').css('background-color', '#fff');
         $('.color-white4').css('color', '#fff');
     });
+    //在线客服悬浮窗
+    $('#online').click(function () {
+        $('#service').css('display', 'block');
+    });
+    $('#close').click(function () {
+        $('#service').css('display', 'none');
+    });
+    $('#closes').click(function () {
+        $('#service').css('display', 'none');
+    });
 });

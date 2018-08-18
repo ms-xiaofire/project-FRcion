@@ -1,0 +1,176 @@
+.green {
+    color: #009900;
+}
+.orange {
+    color: orangered;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: #013567;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-green {
+    background-color: #669900;
+}
+
+.main {
+    width: 100%;
+    min-height: 80vh;
+    background: url(../images/bg.png) center no-repeat;
+    background-size: cover;
+}
+.main-box {
+    width: 80%;
+    min-height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*交易中心*/
+#shopping {
+    display: none;
+}
+.table {
+    width: 85%;
+    min-width: 750px;
+    color: #013567;
+    margin: 0 auto;
+}
+.table thead tr th {
+    border: none;
+    text-align: center;
+}
+.table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+/*去交易title*/
+.main-buy {
+    padding: 30px 100px;
+    border-bottom: 2px solid #ccc;
+}
+.buy-title {
+    display: flex;
+}
+.title-left {
+    width: 100px;
+    text-align: center;
+    line-height: 52px;
+    color: #013567;
+}
+.title-right {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+.price {
+    text-align: center;
+}
+.price span {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+.new-price {
+    color: orangered;
+    font-size: 16px;
+}
+.height-price {
+    color: orangered;
+}
+.low-price {
+    color: #009900;
+}
+/*去交易详情*/
+.buy-body {
+    padding: 20px 100px;
+    display: flex;
+}
+.buy-left {
+    width: 50%;
+}
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    border: 1px solid #8e8e8e;
+}
+.myIcon {
+    color: #8e8e8e;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.myIcon div p {
+    margin: 10px 0;
+}
+.buyIcon {
+    display: flex;
+    justify-content: space-between;
+}
+.buying {
+    margin-right: 15px;
+}
+.sale {
+    margin-left: 15px;
+}
+.deal {
+    color: #8e8e8e;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.deal div {
+    display: flex;
+}
+.deal div label {
+    min-width: 70px;
+}
+.deal div input {
+    width: 150px;
+    padding: 0 5px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance:textfield;
+}
+.buy-button {
+    width: 80%;
+    color: #fff;
+    border: none;
+    margin: 15px auto 10px;
+    display: block;
+}
+.buy-right {
+    width: 50%;
+}
+/*底部警告信息*/
+.main-bottom {
+    width: 80%;
+    position: relative;
+}
+.warning {
+    padding: 0 100px;
+    color: #a82127;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px){
+    .main-box {
+        width: 100%;
+        min-height: auto;
+    }
+    .main-buy {
+        padding: 20px 0;
+    }
+    .buy-body {
+        padding: 10px 10px 20px;
+    }
+    .main-bottom {
+        display: none;
+    }
+}
