@@ -34,7 +34,7 @@
 #shopping {
     display: none;
 }
-.table {
+.tables {
     width: 85%;
     min-width: 750px;
     color: #013567;
@@ -86,11 +86,12 @@
 }
 /*去交易详情*/
 .buy-body {
-    padding: 20px 100px;
+    padding: 20px 60px;
     display: flex;
+    justify-content: space-between;
 }
 .buy-left {
-    width: 50%;
+    width: 55%;
 }
 .chart {
     width: 100%;
@@ -124,13 +125,20 @@
     padding: 10px;
     border: 1px solid #ccc;
 }
-.deal div {
+.buy-options {
     display: flex;
+    align-items: center;
+    margin: 5px 0;
 }
-.deal div label {
+.buy-options div {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.buy-options label {
     min-width: 70px;
 }
-.deal div input {
+.buy-options input {
     width: 150px;
     padding: 0 5px;
 }
@@ -145,15 +153,27 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     display: block;
 }
 .buy-right {
-    width: 50%;
+    width: 40%;
+}
+.buy-right a {
+    color: #013567;
+}
+.buy-right a:hover {
+    text-decoration: none;
+}
+.buy-right a:focus {
+    text-decoration: none;
+}
+.borders {
+    border: 1px solid #ccc;
 }
 /*底部警告信息*/
 .main-bottom {
     width: 80%;
+    margin: 0 auto;
     position: relative;
 }
 .warning {
-    padding: 0 100px;
     color: #a82127;
     line-height: 24px;
     margin-bottom: 50px;

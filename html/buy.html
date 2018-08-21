@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>交易中心</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/mod_header_footer.css">
+    <link rel="stylesheet" href="../component/modules.css">
     <link rel="stylesheet" href="../css/buy.css">
 </head>
 <body>
@@ -101,7 +101,7 @@
         <div class="main-body">
             <div class="table-responsive" id="shopping">
                 <form>
-                    <table class="table">
+                    <table class="table tables">
                         <thead>
                         <tr>
                             <th>交易对</th>
@@ -212,32 +212,34 @@
                         <div class="buying">
                             <p class="blue">买入KEYS币</p>
                             <div class="deal">
-                                <div>
+                                <div class="buy-options">
                                     <label>最佳买价：</label>
                                     <span class="red">1，0000</span>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>买入单价：</label>
                                     <input type="number" placeholder="请输入买入单价">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>最大可买：</label>
                                     <span>500，2145</span>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>买入数量：</label>
                                     <input type="number" placeholder="请输入要买入的数量">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>交易密码：</label>
                                     <input type="number" placeholder="请输入交易密码">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>手续费：</label>
-                                    <span>2</span>
-                                    <span>（3%ETH）</span>
+                                    <div>
+                                        <span>2</span>
+                                        <span>（3%ETH）</span>
+                                    </div>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>交易额：</label>
                                     <span>200ETH</span>
                                 </div>
@@ -251,32 +253,34 @@
                         <div class="sale">
                             <p class="blue">卖出KEYS币</p>
                             <div class="deal">
-                                <div>
+                                <div class="buy-options">
                                     <label>最佳卖价：</label>
                                     <span class="green">1，0000</span>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>卖出单价：</label>
                                     <input type="number" placeholder="请输入卖出单价">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>最大可卖：</label>
                                     <span>500，2145</span>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>卖出数量：</label>
                                     <input type="number" placeholder="请输入要卖出的数量">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>交易密码：</label>
                                     <input type="number" placeholder="请输入交易密码">
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>手续费：</label>
-                                    <span>2</span>
-                                    <span>（3%ETH）</span>
+                                    <div>
+                                        <span>2</span>
+                                        <span>（3%ETH）</span>
+                                    </div>
                                 </div>
-                                <div>
+                                <div class="buy-options">
                                     <label>交易额：</label>
                                     <span>200ETH</span>
                                 </div>
@@ -290,9 +294,166 @@
                     </div>
                 </div>
                 <div class="buy-right">
-                    <div class="entrust"></div>
-                    <div class="newBuy"></div>
-                    <div class="myEntrust"></div>
+                    <div class="entrust">
+                        <label class="blue">委托信息</label>
+                        <form>
+                            <table class="table borders">
+                                <thead>
+                                <tr>
+                                    <th>类型</th>
+                                    <th>委托价格</th>
+                                    <th>委托数量</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>卖6</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>卖5</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>卖4</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>卖3</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>卖2</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>卖1</td>
+                                    <td class="green">3000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买1</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买2</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买3</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买4</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买5</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>买6</td>
+                                    <td class="orange">2000</td>
+                                    <td>100</td>
+                                    <td><a href="#">委托</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="newBuy">
+                        <label class="blue">我的最新成交</label>
+                        <form>
+                            <table class="table borders">
+                                <thead>
+                                <tr>
+                                    <th>成交时间</th>
+                                    <th>类型</th>
+                                    <th>成交价格</th>
+                                    <th>成交数量</th>
+                                    <th>成交金额</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td><span>2018-07-15 </span><span> 15:14:24</span></td>
+                                    <td class="orange">买</td>
+                                    <td>100，0000</td>
+                                    <td>200，0000</td>
+                                    <td>200，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td><span>2018-07-15 </span><span> 15:14:24</span></td>
+                                    <td class="green">卖</td>
+                                    <td>100，0000</td>
+                                    <td>200，0000</td>
+                                    <td>200，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td><span>2018-07-15 </span><span> 15:14:24</span></td>
+                                    <td class="orange">买</td>
+                                    <td>100，0000</td>
+                                    <td>200，0000</td>
+                                    <td>200，0000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="myEntrust">
+                        <div>
+                            <label class="blue">我的委托</label>
+                            <
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
