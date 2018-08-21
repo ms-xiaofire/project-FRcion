@@ -1,20 +1,38 @@
-.green {
-    color: #009900;
+.dim {
+    z-index: 1;
 }
-.orange {
-    color: orangered;
+.repeal {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
 }
-.red {
-    color: red;
+.repeal-box {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    background-color: #013567;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
 }
-.blue {
-    color: #013567;
+.repeal-title {
+    display: flex;
+    flex-direction: row-reverse;
 }
-.bg-red {
-    background-color: red;
+.repeal-title {
+    cursor: pointer;
 }
-.bg-green {
-    background-color: #669900;
+.repeal-body {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
+.repeal-bottom {
+    display: flex;
+    justify-content: space-around;
 }
 
 .main {
@@ -25,15 +43,11 @@
 }
 .main-box {
     width: 80%;
-    min-height: 100%;
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
 }
 /*交易中心*/
-#shopping {
-    display: none;
-}
 .tables {
     width: 85%;
     min-width: 750px;
@@ -52,6 +66,7 @@
 .main-buy {
     padding: 30px 100px;
     border-bottom: 2px solid #ccc;
+    display: none;
 }
 .buy-title {
     display: flex;
@@ -61,13 +76,33 @@
     text-align: center;
     line-height: 52px;
     color: #013567;
+    cursor: pointer;
+}
+.iconTab {
+    width: 100px;
+    padding: 0;
+    border: 1px solid gray;
+    background-color: #fff;
+    list-style: none;
+    position: absolute;
+    top: 216px;
+    display: none;
+}
+.iconTab li:hover {
+    color: #fff;
+    background-color: #013567;
 }
 .title-right {
     flex: 1;
     display: flex;
+}
+.price-nav {
+    width: 50%;
+    display: flex;
     justify-content: space-around;
 }
 .price {
+    min-width: 70px;
     text-align: center;
 }
 .price span {
@@ -87,12 +122,12 @@
 /*去交易详情*/
 .buy-body {
     padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    justify-content: space-around;
 }
-.buy-left {
-    width: 55%;
-}
+/*.buy-left {*/
+    /*width: 55%;*/
+/*}*/
 .chart {
     width: 100%;
     height: 300px;
@@ -139,7 +174,7 @@
     min-width: 70px;
 }
 .buy-options input {
-    width: 150px;
+    width: 80%;
     padding: 0 5px;
 }
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
@@ -152,9 +187,9 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     margin: 15px auto 10px;
     display: block;
 }
-.buy-right {
-    width: 40%;
-}
+/*.buy-right {*/
+    /*width: 42%;*/
+/*}*/
 .buy-right a {
     color: #013567;
 }
@@ -166,6 +201,26 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
 }
 .borders {
     border: 1px solid #ccc;
+}
+.float-right {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.float-right select {
+    width: 80px;
+    color: #8e8e8e;
+    text-align: center;
+    text-align-last: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.float-right button {
+    height: 20px;
+    padding: 0 20px;
+    color: #fff;
+    background-color: #9aadbe;
+    margin-left: 15px;
 }
 /*底部警告信息*/
 .main-bottom {
@@ -179,6 +234,24 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     margin-bottom: 50px;
 }
 
+@media screen and (max-width: 992px){
+    .buy-body {
+        display: block;
+    }
+    .iconTab {
+        top: 265px;
+    }
+    .title-right {
+        display: block;
+    }
+    .price-nav {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .price p {
+        margin: 0;
+    }
+}
 @media screen and (max-width: 768px){
     .main-box {
         width: 100%;
@@ -187,10 +260,21 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     .main-buy {
         padding: 20px 0;
     }
+    .iconTab {
+        top: 195px;
+    }
     .buy-body {
         padding: 10px 10px 20px;
     }
     .main-bottom {
         display: none;
+    }
+}
+@media screen and (max-width: 560px){
+    .buyIcon {
+        display: block;
+    }
+    .repeal-box {
+        width: 250px;
     }
 }

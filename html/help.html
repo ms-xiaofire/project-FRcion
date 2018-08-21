@@ -18,20 +18,19 @@
             <a href="#" class="none">
                 <img src="../images/keys-1.png">
             </a>
-            <select class="language none">
-                <option>English</option>
-                <option>中文</option>
-            </select>
+            <span class="language none" id="move-language">
+                <span>中文</span>
+            </span>
         </div>
         <div class="flex">
             <div>
                 <a href="./login.html">登录</a>
-                <span></span>
+                <span>丨</span>
                 <a href="register.html">注册</a>
             </div>
             <div class="hides">
                 <a href="#">用户名</a>
-                <span></span>
+                <span>丨</span>
                 <a href="#" class="out">退出</a>
             </div>
             <div>
@@ -77,7 +76,7 @@
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <a href="home.html" class="logo"><img src="../images/keys-1.png"></a>
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" id="highlight">
                 <li><a href="home.html">首页</a></li>
                 <li><a href="buy.html">交易中心</a></li>
                 <li><a href="profit.html">超级分红</a></li>
@@ -85,14 +84,17 @@
                 <li><a href="help.html" id="help">帮助中心</a></li>
                 <li><a href="news.html">最新动态</a></li>
                 <li><a href="market.html">行情中心</a></li>
-                <select class="language">
-                    <option>English</option>
-                    <option>中文</option>
-                </select>
+                <span class="language" id="pc-language">
+                    <span>中文</span>
+                </span>
             </ul>
         </div>
     </div>
 </nav>
+<ul class="tab-language">
+    <li>English</li>
+    <li>中文</li>
+</ul>
 <!--导航栏 end-->
 
 <!--内容-->

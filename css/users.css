@@ -1,0 +1,135 @@
+.main {
+    width: 100%;
+    background: url(../images/bg.png) center no-repeat;
+    background-size: cover;
+}
+.main-box {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.user-box {
+    display: flex;
+    padding: 50px 100px;
+}
+.user-menu {
+    width: 110px;
+    margin-right: 40px;
+}
+.user-menu button{
+    color: #fff;
+    border: none;
+    background-color: #99aec3;
+    padding: 5px 20px;
+    width: 110px;
+    text-align: left;
+    margin: 1px;
+}
+.user-menu button:hover {
+    background-color: #013567;
+}
+.user-menu button:focus {
+    background-color: #013567;
+}
+.user-main {
+    flex: 1;
+    overflow: hidden;
+}
+.user-title {
+    padding: 5px 0;
+    border-bottom: 1px solid #013567;
+    margin-bottom: 20px;
+}
+.user-title span {
+    color: #013567;
+    font-size: 16px;
+    font-weight: bold;
+}
+.myKEY {
+    color: #013567;
+    margin-bottom: 30px;
+    display: flex;
+}
+.myKEY p {
+    margin: 0 20px 0;
+}
+.myKEY p span {
+    margin-right: 5px;
+}
+.table {
+    min-width: 750px;
+    color: #013567;
+    border-collapse: inherit;
+}
+.table thead {
+    background-color: #ccd6e0;
+}
+.table thead tr th, .table tbody tr td {
+    text-align: center;
+    border: none;
+    vertical-align: middle;
+}
+.logo {
+    width: 20px;
+    margin-right: 10px;
+}
+.top-up {
+    margin: 0 5px;
+}
+.top-up:hover {
+    text-decoration: none;
+}
+.top-up:focus {
+    text-decoration: none;
+}
+.goBuy {
+    color: #013567;
+    border: 1px solid #013567;
+}
+.goBuy:hover {
+    color: #fff;
+    background-color: #013567;
+}
+.goBuy:focus {
+    color: #fff;
+    background-color: #013567;
+}
+/*底部警告信息*/
+.main-bottom {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.warning {
+    color: #a82127;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .main-box {
+        width: 100%;
+    }
+    .user-box {
+        padding: 20px 0;
+        display: block;
+    }
+    .user-menu {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .user-menu button {
+        width: 100px;
+    }
+    .myKEY {
+        display: block;
+    }
+    .main-bottom {
+        display: none;
+    }
+}
+
+.property {
+    display: none;
+}

@@ -1,5 +1,12 @@
 $(document).ready(function () {
     //导航栏高亮
+    // let ids = $('#test>li>a').attr('id');
+    // console.log(ids)
+    // $('#'+ids).css({
+    //     'color': '#fff',
+    //     'background-color': '#013567'
+    // });
+    // $('#home').addClass('highlight');
     $('#home').css({
         'color': '#fff',
         'background-color': '#013567'

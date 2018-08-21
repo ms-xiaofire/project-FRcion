@@ -1,0 +1,162 @@
+.main {
+    width: 100%;
+    min-height: 80vh;
+    background: url(../images/bg.png) center no-repeat;
+    background-size: cover;
+}
+.main-box {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.main-up {
+    padding: 20px 100px;
+    border-bottom: 1px solid #ccc;
+}
+.myBonus {
+    color: #013567;
+    display: flex;
+}
+.myBonus span {
+    margin-right: 60px;
+}
+.timeDown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.timeDown div {
+    color: #013567;
+    font-size: 22px;
+}
+.timeDown button {
+    color: #fff;
+    background-color: #013567;
+    border: none;
+    padding: 0 20px;
+    border-radius: 3px;
+}
+.jackpot {
+    color: #013567;
+    font-size: 18px;
+}
+.states {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+.states img {
+    width: 150px;
+}
+.states p {
+    margin: 20px 0;
+}
+.join {
+    text-align: center;
+}
+.join button {
+    padding: 0 10%;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #013567;
+}
+.joinList {
+    background-color: #ccc;
+    padding: 20px;
+    color: #013567;
+    font-size: 12px;
+    margin: 30px 0;
+}
+.listTitle {
+    font-size: 16px;
+}
+.joinList span {
+    margin-left: 5px;
+}
+.vip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.vip label {
+    min-width: 56px;
+    color: #013567;
+}
+.vip div input {
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.vip div button {
+    color: #fff;
+    padding: 1px 12px;
+    background-color: #99aec3;
+}
+.main-down {
+    padding: 20px 100px;
+}
+.forms {
+    overflow-x: auto;
+}
+.table {
+    min-width: 750px;
+    color: #013567;
+    border-collapse: inherit;
+}
+.table thead {
+    background-color: #ccd6e0;
+}
+.table thead tr th, .table tbody tr td {
+    text-align: center;
+    border: none;
+}
+.table tbody tr td {
+    text-align: center;
+
+}
+/*底部警告信息*/
+.main-bottom {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.warning {
+    color: #a82127;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 768px){
+    .main-box {
+        width: 100%;
+    }
+    .main-up {
+        padding: 20px 10px 0;
+        border: none;
+    }
+    .myBonus {
+        display: block;
+    }
+    .timeDown {
+        text-align: center;
+        display: block;
+    }
+    .states {
+        display: block;
+    }
+    .vip div {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .vip div input {
+        margin: 5px 0 5px 10px;
+    }
+    .main-down {
+        padding: 0 10px 20px;
+    }
+    .main-bottom {
+        display: none;
+    }
+}

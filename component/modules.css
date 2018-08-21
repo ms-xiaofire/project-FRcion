@@ -1,3 +1,9 @@
+
+.highlight {
+    color: #fff;
+    background-color: #013567;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -54,7 +60,7 @@
 
 /*响应式导航栏*/
 .shabow {
-    box-shadow: 0 5px 10px #8e8e8e;
+    box-shadow: rgba(0, 0, 0, 0.35) 1px 5px 10px;
 }
 .logo img{
     margin: 15px 0 0 15px;
@@ -95,6 +101,27 @@
     margin: 0 15px 0 10px;
 }
 
+.green {
+    color: #009900;
+}
+.orange {
+    color: orangered;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: #013567;
+}
+.gray {
+    color: #8e8e8e;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-green {
+    background-color: #669900;
+}
 
 .service_windows {
     width: 500px;
