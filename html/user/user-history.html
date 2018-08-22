@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../component/modules.css">
+    <link rel="stylesheet" href="../../css/users.css">
+</head>
+<body>
+<!--头部-->
+<header class="header">
+    <div class="header-left">
+        <span>欢迎来到FRcion</span>
+    </div>
+    <div class="header-right">
+        <div>
+            <a href="#" class="none">
+                <img src="../../images/keys-1.png">
+            </a>
+            <span class="language none" id="move-language">
+                <span>中文</span>
+            </span>
+        </div>
+        <div class="flex">
+            <div>
+                <a href="../login.html">登录</a>
+                <span>丨</span>
+                <a href="../register.html">注册</a>
+            </div>
+            <div class="hides">
+                <a href="#">用户名</a>
+                <span>丨</span>
+                <a href="#" class="out">退出</a>
+            </div>
+            <div>
+                <nav class="navbar navbar-default none" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <img src="../../images/menu.png" class="menus">
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li  class="show"><a href="../home.html"><img src="../../images/keys-1.png"></a></li>
+                                <li><a href="../home.html">首页</a></li>
+                                <li><a href="../buy.html">交易中心</a></li>
+                                <li><a href="../profit.html">超级分红</a></li>
+                                <li><a href="user-property.html">用户中心</a></li>
+                                <li><a href="../help.html">帮助中心</a></li>
+                                <li><a href="../news.html">最新动态</a></li>
+                                <li><a href="../market.html">行情中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!--头部 end-->
+
+<!--导航栏-->
+<nav class="navbar navbar-default show shabow" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <a href="../home.html" class="logo"><img src="../../images/keys-1.png"></a>
+            <ul class="nav navbar-nav" id="highlight">
+                <li><a href="../home.html">首页</a></li>
+                <li><a href="../buy.html">交易中心</a></li>
+                <li><a href="../profit.html">超级分红</a></li>
+                <li><a href="user-property.html" id="users">用户中心</a></li>
+                <li><a href="../help.html">帮助中心</a></li>
+                <li><a href="../news.html">最新动态</a></li>
+                <li><a href="../market.html">行情中心</a></li>
+                <span class="language" id="pc-language">
+                    <span>中文</span>
+                </span>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ul class="tab-language">
+    <li>English</li>
+    <li>中文</li>
+</ul>
+<!--导航栏 end-->
+
+<!--内容-->
+<main class="main">
+    <div class="main-box">
+        <div class="user-box">
+            <div class="user-menu">
+                <a href="user-property.html">账户资产</a>
+                <a href="user-record.html">财务记录</a>
+                <a href="user-manage.html">委托管理</a>
+                <a href="user-bargain.html">我的成交</a>
+                <a href="user-history.html" class="bg-blue">委托历史</a>
+                <a href="user-pwd.html">修改密码</a>
+                <a href="user-mine.html">个人信息</a>
+                <a href="user-realName.html">实名认证</a>
+                <a href="user-topUp.html">充币</a>
+                <a href="user-fetch.html">提币</a>
+                <a href="user-center.html">用户中心</a>
+                <a href="user-invite.html">邀请好友</a>
+                <a href="user-system.html">系统消息</a>
+            </div>
+            <!--委托管理-->
+            <div class="user-main">
+                <div class="user-title">
+                    <span>委托历史</span>
+                    <div class="title-right">
+                        <select>
+                            <option>全部</option>
+                            <option>KEYS</option>
+                            <option>BTC</option>
+                            <option>BCH</option>
+                            <option>ETH</option>
+                            <option>LTC</option>
+                            <option>EOS</option>
+                            <option>XRP</option>
+                        </select>
+                        <select>
+                            <option>状态</option>
+                            <option>成交</option>
+                            <option>部分已成交</option>
+                            <option>未成交</option>
+                        </select>
+                        <button type="button">查询</button>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <form>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>委托时间</th>
+                                <th>币种</th>
+                                <th>类型</th>
+                                <th>委托数量</th>
+                                <th>委托价格</th>
+                                <th>成交数量</th>
+                                <th>尚未成交</th>
+                                <th>状态</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>KEYS</td>
+                                <td>买</td>
+                                <td>100</td>
+                                <td>1，2335</td>
+                                <td>5，6312</td>
+                                <td>458</td>
+                                <td>部分成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>BTC</td>
+                                <td>买</td>
+                                <td>422</td>
+                                <td>3652</td>
+                                <td>95，3321</td>
+                                <td>0</td>
+                                <td>已成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>BCH</td>
+                                <td>卖</td>
+                                <td>632</td>
+                                <td>7458</td>
+                                <td>2，3105</td>
+                                <td>0</td>
+                                <td>已成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>ETH</td>
+                                <td>卖</td>
+                                <td>123</td>
+                                <td>8569</td>
+                                <td>4542</td>
+                                <td>23</td>
+                                <td>部分成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>LTC</td>
+                                <td>买</td>
+                                <td>96</td>
+                                <td>1023</td>
+                                <td>6652</td>
+                                <td>0</td>
+                                <td>已成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>EOS</td>
+                                <td>卖</td>
+                                <td>102</td>
+                                <td>1，5412</td>
+                                <td>1，8210</td>
+                                <td>568</td>
+                                <td>未成交</td>
+                            </tr>
+                            </tbody>
+                            <tbody>
+                            <tr>
+                                <td><span>2018-07-06 </span><span> 14:23:57</span></td>
+                                <td>XRP</td>
+                                <td>买</td>
+                                <td>679</td>
+                                <td>6523</td>
+                                <td>20，2857</td>
+                                <td>412</td>
+                                <td>未成交</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">下一页</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--委托管理 end-->
+        </div>
+        <div class="main-bottom">
+            <div class="warning">
+                <p> 风险提示：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+            </div>
+        </div>
+    </div>
+</main>
+<!--内容 end-->
+
+<!--在线客服浮动窗口-->
+<div class="service_windows" id="service">
+    <div class="service_title">
+        <div class="service_left">
+            <img src="../../images/service-icon.png">
+            <span>在线客服</span>
+        </div>
+        <img src="../../images/close.png" class="close" id="close">
+    </div>
+    <div class="service_body">
+        <div class="service_view">
+            <img src="../../images/service.png">
+            <div class="view_right">
+                <div class="view_main">
+                    <div class="trigon-left"></div>
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service_view">
+            <img src="../../images/service.png">
+            <div class="view_right">
+                <div class="view_main">
+                    <div class="trigon-left"></div>
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service_view">
+            <div class="view_left">
+                <div class="view_main flex-end">
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                    <div class="trigon-right"></div>
+                </div>
+            </div>
+            <img src="../../images/service.png">
+        </div>
+    </div>
+    <textarea class="user_input"></textarea>
+    <div class="service_bottom">
+        <button type="button" class="btn" id="closes">关闭</button>
+        <button type="button" class="btn sent">发送</button>
+    </div>
+</div>
+<!--在线客服浮动窗口 end-->
+
+<!--尾部-->
+<footer class="footer">
+    <div class="footer-left"></div>
+    <div class="online" id="online">
+        <img src="../../images/online.png">
+        <p>在线客服</p>
+    </div>
+    <div class="qq">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/QQ.png">
+        <p>QQ</p>
+    </div>
+    <div class="wechat">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/wechat.png">
+        <p>微信</p>
+    </div>
+    <div class="microblog">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/microblog.png">
+        <p>微博</p>
+    </div>
+</footer>
+<!--尾部 end-->
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/modules.js"></script>
+<script src="../../js/users.js"></script>
+</body>
+</html>

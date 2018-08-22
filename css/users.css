@@ -5,6 +5,7 @@
 }
 .main-box {
     width: 80%;
+    min-height: 80vh;
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
@@ -17,7 +18,7 @@
     width: 110px;
     margin-right: 40px;
 }
-.user-menu button{
+.user-menu a{
     color: #fff;
     border: none;
     background-color: #99aec3;
@@ -25,12 +26,18 @@
     width: 110px;
     text-align: left;
     margin: 1px;
+    display: inline-block;
 }
-.user-menu button:hover {
+.user-menu a:hover {
+    text-decoration: none;
     background-color: #013567;
 }
-.user-menu button:focus {
+.user-menu a:focus {
+    text-decoration: none;
     background-color: #013567;
+}
+.bg-blue {
+    background-color: #013567!important;
 }
 .user-main {
     flex: 1;
@@ -40,11 +47,34 @@
     padding: 5px 0;
     border-bottom: 1px solid #013567;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .user-title span {
     color: #013567;
     font-size: 16px;
     font-weight: bold;
+}
+.title-right {
+    display: flex;
+    align-items: center;
+}
+.title-right select {
+    padding: 1px 0;
+    text-align: center;
+    text-align-last: center;
+    color: #8e8e8e;
+    border-radius: 3px;
+    margin: 0 5px;
+}
+.title-right button {
+    color: #fff;
+    padding: 1px 12px;
+    background-color: #99aec3;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
 }
 .myKEY {
     color: #013567;
@@ -69,6 +99,15 @@
     text-align: center;
     border: none;
     vertical-align: middle;
+}
+.table a {
+    color: #013567;
+}
+.table a:hover {
+    text-decoration: none;
+}
+.table a:focus {
+    text-decoration: none;
 }
 .logo {
     width: 20px;
@@ -95,11 +134,120 @@
     color: #fff;
     background-color: #013567;
 }
+/*分页*/
+.pagination {
+    float: right;
+}
+.pagination ul {
+    padding: 0;
+    list-style: none;
+}
+.pagination ul li {
+    margin: 0 5px;
+    display: inline;
+}
+/*修改密码按钮*/
+.password button {
+    width: 200px;
+    height: 30px;
+    color: #013567;
+    background-color: #ccd6e0;
+    cursor: pointer;
+    border: none;
+}
+.pwd-button {
+    color: #fff!important;
+    background-color: #013567!important;
+}
+.changePwd {
+    margin: 30px 0;
+}
+.changePwd div {
+    margin: 15px 0;
+}
+.changePwd div span {
+    display: inline-block;
+    text-align: right;
+    min-width: 112px;
+}
+.changePwd div input {
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+}
+.pwd-none {
+    display: none !important;
+}
+.submits {
+    height: 26px;
+    width: 100px;
+    display: block;
+    margin: 30px auto 0;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    background-color: #013567;
+}
+/*个人信息*/
+.mine-account {
+    display: flex;
+    align-items: center;
+}
+.account-right {
+    margin-left: 20px;
+}
+.account-right p {
+    min-width: 45%;
+    display: inline-block;
+}
+.user-main .blue {
+    width: 60%;
+}
+.mine-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 12px;
+}
+.mine-state a:hover {
+    text-decoration: none;
+}
+.mine-state a:focus {
+    text-decoration: none;
+}
+.asset {
+    margin: 30px 0;
+}
+.asset a:hover {
+    text-decoration: none;
+}
+.asset a:focus {
+    text-decoration: none;
+}
+.asset-main {
+    display: flex;
+    font-size: 12px;
+}
+.asset-main div {
+    margin-right: 50px;
+}
+.asset-main div p a {
+    margin-right: 50px;
+}
+/*.asset-main div p a:hover {*/
+    /*text-decoration: none;*/
+/*}*/
+/*.asset-main div p a:focus {*/
+    /*text-decoration: none;*/
+/*}*/
+/*个人信息 end*/
 /*底部警告信息*/
 .main-bottom {
     width: 80%;
     margin: 0 auto;
-    position: relative;
+    padding: 0 100px;
+    position: absolute;
+    bottom: 80px;
 }
 .warning {
     color: #a82127;
@@ -119,7 +267,7 @@
         width: 93%;
         margin: 0 auto;
     }
-    .user-menu button {
+    .user-menu a {
         width: 100px;
     }
     .myKEY {
@@ -128,12 +276,8 @@
     .main-bottom {
         display: none;
     }
-}
-
-.property {
-    display: none;
-}
-
-.test {
-    background-color: #013567;
+    .password, .changePwd {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
