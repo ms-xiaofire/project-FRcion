@@ -1,0 +1,106 @@
+.main {
+    width: 100%;
+    background: url(../images/bg.png) center no-repeat;
+    background-size: cover;
+}
+.main-box {
+    width: 80%;
+    min-height: 80vh;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.help-box {
+    display: flex;
+    padding: 50px 100px;
+    margin-bottom: 50px;
+}
+.help-menu {
+    width: 110px;
+    margin-right: 40px;
+}
+.help-menu a{
+    color: #fff;
+    border: none;
+    background-color: #99aec3;
+    padding: 5px 20px;
+    min-width: 110px;
+    text-align: left;
+    margin: 1px;
+    display: inline-block;
+}
+.help-menu a:hover {
+    text-decoration: none;
+    background-color: #013567;
+}
+.help-menu a:focus {
+    text-decoration: none;
+    background-color: #013567;
+}
+.bg-blue {
+    background-color: #013567!important;
+}
+.help-main {
+    flex: 1;
+    overflow: hidden;
+}
+.help-title {
+    padding: 5px 0;
+    border-bottom: 1px solid #013567;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.help-title span {
+    color: #013567;
+    font-size: 16px;
+    font-weight: bold;
+}
+.help-step {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+.help-step div {
+    margin: 30px 0;
+}
+.help-step div img{
+    width: 100%;
+    height: 300px;
+}
+/*底部警告信息*/
+.main-bottom {
+    /*width: 80%;*/
+    margin: 0 auto;
+    padding: 0 100px;
+    position: relative;
+    /*bottom: 80px;*/
+}
+.warning {
+    color: #a82127;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+/*底部警告信息 end*/
+
+
+
+@media screen and (max-width: 870px) {
+    .main-box {
+        width: 100%;
+    }
+    .help-box {
+        padding: 20px 10px;
+        display: block;
+    }
+    .help-menu {
+        width: 93%;
+        margin: 0 auto;
+    }
+    .help-menu a {
+        width: 100px;
+    }
+    .main-bottom {
+        display: none;
+    }
+}

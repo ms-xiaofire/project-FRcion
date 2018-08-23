@@ -46,11 +46,11 @@
                             <ul class="nav navbar-nav">
                                 <li  class="show"><a href="../home.html"><img src="../../images/keys-1.png"></a></li>
                                 <li><a href="../home.html">首页</a></li>
-                                <li><a href="../buy.html">交易中心</a></li>
+                                <li><a href="../buy/buy.html">交易中心</a></li>
                                 <li><a href="../profit.html">超级分红</a></li>
                                 <li><a href="user-property.html">用户中心</a></li>
-                                <li><a href="../help.html">帮助中心</a></li>
-                                <li><a href="../news.html">最新动态</a></li>
+                                <li><a href="../help/help-register.html">帮助中心</a></li>
+                                <li><a href="../news/news.html">最新动态</a></li>
                                 <li><a href="../market.html">行情中心</a></li>
                             </ul>
                         </div>
@@ -78,11 +78,11 @@
             <a href="../home.html" class="logo"><img src="../../images/keys-1.png"></a>
             <ul class="nav navbar-nav" id="highlight">
                 <li><a href="../home.html">首页</a></li>
-                <li><a href="../buy.html">交易中心</a></li>
+                <li><a href="../buy/buy.html">交易中心</a></li>
                 <li><a href="../profit.html">超级分红</a></li>
                 <li><a href="user-property.html" id="users">用户中心</a></li>
-                <li><a href="../help.html">帮助中心</a></li>
-                <li><a href="../news.html">最新动态</a></li>
+                <li><a href="../help/help-register.html">帮助中心</a></li>
+                <li><a href="../news/news.html">最新动态</a></li>
                 <li><a href="../market.html">行情中心</a></li>
                 <span class="language" id="pc-language">
                     <span>中文</span>
@@ -122,51 +122,58 @@
                     <span>个人信息</span>
                     <span></span>
                 </div>
-                <div class="blue">
-                    <div class="mine-account">
-                        <img src="../../images/logo.png">
-                        <div class="account-right">
-                            <p>ID：<span>102</span></p>
-                            <p>帐号：<span>13344445555</span></p>
-                            <p>姓名：<span>张三</span><span>（未实名）</span></p>
+                <div class="blue user-body">
+                    <div class="mine-list">
+                        <p>用户ID：</p>
+                        <span>102</span>
+                    </div>
+                    <div class="mine-list">
+                        <p>账户：</p>
+                        <span>13344445555</span>
+                    </div>
+                    <div class="mine-list">
+                        <p>昵称：</p>
+                        <div class="mine-main nickname">
+                            <span>张三</span>
+                            <span class="orange" id="nickname">修改</span>
+                        </div>
+                        <div class="nickname-input none">
+                            <input type="text">
                         </div>
                     </div>
-                    <div class="mine-state">
-                        <span>登录密码：******</span>
-                        <a href="#" class="orange">修改</a>
-                    </div>
-                    <div class="mine-state">
-                        <span>交易密码：******</span>
-                        <a href="#" class="orange">修改</a>
-                    </div>
-                    <div class="mine-state">
-                        <span>实名认证：</span>
-                        <a href="#" class="orange">未认证</a>
-                    </div>
-                    <div class="mine-state">
-                        <span>绑定手机号：</span>
-                        <a href="#" class="orange">未绑定</a>
-                    </div>
-                    <div class="mine-state">
-                        <span>绑定私人钱包：</span>
-                        <a href="#" class="orange">未绑定</a>
-                    </div>
-                    <div class="asset">
-                        <p>账户资产（已认证）<a href="#" class="blue">查看详情</a></p>
-                        <div class="asset-main">
-                            <div>
-                                <p>总资产：<span>662，5411</span>EHT</p>
-                                <p>可用资产：<span>662，5411</span>EHT</p>
-                            </div>
-                            <div>
-                                <p>
-                                    <a href="#" class="orange">充币</a>
-                                    <a href="#" class="green">提币</a>
-                                </p>
-                                <p>冻结资产：<span>662，5411</span>EHT</p>
-                            </div>
+                    <div class="mine-list">
+                        <p>真实姓名：</p>
+                        <div class="mine-main mine-service">
+                            <p>张三</p>
+                            <p class="gray">（如需修改，请联系客服人员）</p>
                         </div>
                     </div>
+                    <div class="mine-list">
+                        <p>身份证号：</p>
+                        <div class="mine-main mine-service">
+                            <p>410101010101010</p>
+                            <p class="gray">（如需修改，请联系客服人员）</p>
+                        </div>
+                    </div>
+                    <div class="mine-list">
+                        <p>手机号码：</p>
+                        <span>13344445555</span>
+                    </div>
+                    <div class="mine-list">
+                        <p>所在城市：</p>
+                        <div class="mine-main place">
+                            <div class="mine-city">
+                                <span>河南</span>
+                                <span>郑州</span>
+                            </div>
+                            <span class="orange" id="place">修改</span>
+                        </div>
+                        <div class="place-select none" id="city">
+                            <select class="prov"></select>
+                            <select class="city" disabled="disabled"></select>
+                        </div>
+                    </div>
+                    <button type="button" id="submit" class="sure none">确认提交</button>
                 </div>
             </div>
             <!--个人信息 end-->
@@ -268,6 +275,8 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/jquery.cityselect.js"></script>
+<script src="js/user-mine.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/users.js"></script>
 </body>

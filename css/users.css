@@ -1,3 +1,16 @@
+.input {
+    border: 1px solid #013567;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 0 5px;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.dim {
+    filter: blur(5px);
+}
+
 .main {
     width: 100%;
     background: url(../images/bg.png) center no-repeat;
@@ -13,6 +26,7 @@
 .user-box {
     display: flex;
     padding: 50px 100px;
+    margin-bottom: 50px;
 }
 .user-menu {
     width: 110px;
@@ -146,7 +160,7 @@
     margin: 0 5px;
     display: inline;
 }
-/*修改密码按钮*/
+/*修改密码*/
 .password button {
     width: 200px;
     height: 30px;
@@ -170,25 +184,99 @@
     text-align: right;
     min-width: 112px;
 }
-.changePwd div input {
-    border: 1px solid #8e8e8e;
-    border-radius: 5px;
-}
 .pwd-none {
     display: none !important;
 }
-.submits {
-    height: 26px;
-    width: 100px;
-    display: block;
-    margin: 30px auto 0;
-    color: #fff;
-    border-radius: 3px;
-    border: none;
-    background-color: #013567;
-}
+/*修改密码 end*/
 /*个人信息*/
-.mine-account {
+.mine-list {
+    display: flex;
+    margin: 20px 0;
+}
+.mine-list p {
+    min-width: 85px;
+    text-align: right;
+    margin: 0 5px 0 0;
+}
+.mine-main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+.mine-main p {
+    text-align: left;
+    margin: 0;
+}
+.mine-city {
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.nickname-input {
+    flex: 1;
+}
+.nickname-input input {
+    width: 100%;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #8e8e8e;
+}
+.sure {
+    margin: 20px 0 20px 85px;
+    color: #fff;
+    padding: 1px 20px;
+    background-color: #013567;
+    border: none;
+    border-radius: 5px;
+}
+/*个人信息 end*/
+/*实名认证*/
+.identity span {
+    width: 150px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 0 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+/*实名认证 end*/
+/*充币*/
+.recharge div {
+    margin: 10px 0;
+}
+/*充币 end*/
+/*提币*/
+.iconDress {
+    overflow-x: auto;
+}
+.iconDress-main {
+    min-width: 650px;
+}
+.iconDress-main div {
+    text-align: center;
+    display: inline-block;
+}
+.iconDress-main div p {
+    padding: 0 20px;
+}
+.border-right {
+    border-right: 1px solid #013567;
+}
+.iconCount div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.iconCount div p {
+    min-width: 70px;
+    margin: 0;
+}
+.iconExplain {
+    margin-bottom: 30px;
+}
+/*提币 end*/
+/*用户中心*/
+.center-account {
     display: flex;
     align-items: center;
 }
@@ -199,20 +287,20 @@
     min-width: 45%;
     display: inline-block;
 }
-.user-main .blue {
+.user-body {
     width: 60%;
 }
-.mine-state {
+.center-state {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 10px 0;
     font-size: 12px;
 }
-.mine-state a:hover {
+.center-state a:hover {
     text-decoration: none;
 }
-.mine-state a:focus {
+.center-state a:focus {
     text-decoration: none;
 }
 .asset {
@@ -231,23 +319,145 @@
 .asset-main div {
     margin-right: 50px;
 }
+.asset-main div p {
+    white-space: nowrap;
+}
 .asset-main div p a {
     margin-right: 50px;
 }
-/*.asset-main div p a:hover {*/
-    /*text-decoration: none;*/
-/*}*/
-/*.asset-main div p a:focus {*/
-    /*text-decoration: none;*/
-/*}*/
-/*个人信息 end*/
+.binding {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.binding-box {
+    width: 400px;
+    height: 200px;
+    color: #fff;
+    background-color: #013567;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.binding-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+    border-bottom: 1px solid #fff;
+}
+.binding-title span {
+    font-size: 16px;
+}
+.binding-main {
+    padding: 20px;
+}
+.binding-main span {
+    font-size: 12px;
+}
+.binding-main input {
+    color: #8e8e8e;
+}
+.binding-bottom {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.binding-bottom button {
+    height: 22px;
+    padding: 0 15px;
+}
+/*用户中心 end*/
+/*邀请好友*/
+.invite-title {
+    margin: 0;
+}
+.invite-button {
+    margin: 10px 0 20px 10px;
+}
+.invite {
+    margin: 0;
+}
+.poster {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.poster-box {
+    width: 250px;
+    height: 300px;
+    color: #fff;
+    padding: 10px;
+    background: url("../images/poster.png") center no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.poster-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.poster-title img {
+    width: 20px;
+    cursor: pointer;
+}
+.poster-box div p {
+    font-size: 22px;
+    float: right;
+    margin: 10px 0 0;
+}
+.poster-main {
+    width: 30px;
+    border-bottom: 2px solid #fff;
+    display: block;
+}
+.poster-bottom {
+    margin: 20px 20px 0;
+}
+.poster-bottom img {
+    width: 190px;
+}
+/*邀请好友 end*/
+/*系统消息*/
+.messages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.messages a {
+    color: #8e8e8e;
+}
+.messages a:hover {
+    text-decoration: none;
+}
+.messages a:focus {
+    text-decoration: none;
+}
+.messages-title {
+    text-align: center;
+    font-size: 16px;
+    color: #013567;
+}
+.messages-time {
+    color: #8e8e8e;
+    float: right;
+    margin-right: 15%;
+}
+.textPart div {
+    color: #8e8e8e;
+    margin: 40px 0;
+}
+/*系统消息 end*/
 /*底部警告信息*/
 .main-bottom {
-    width: 80%;
+    /*width: 80%;*/
     margin: 0 auto;
     padding: 0 100px;
-    position: absolute;
-    bottom: 80px;
+    position: relative;
+    /*bottom: 80px;*/
 }
 .warning {
     color: #a82127;
@@ -255,7 +465,12 @@
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media  screen and (max-width: 1275px){
+    .mine-service {
+        display: block;
+    }
+}
+@media screen and (max-width: 870px) {
     .main-box {
         width: 100%;
     }
@@ -273,11 +488,21 @@
     .myKEY {
         display: block;
     }
-    .main-bottom {
-        display: none;
-    }
     .password, .changePwd {
         width: 80%;
         margin: 0 auto;
     }
+    .user-body {
+        margin: 0 auto;
+    }
+    .binding-box {
+        width: 300px;
+    }
+    .asset-main {
+        display: block;
+    }
+    .main-bottom {
+        display: none;
+    }
 }
+

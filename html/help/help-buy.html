@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-    <title>最新动态</title>
+    <title>用户中心</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../component/modules.css">
-    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../../component/modules.css">
+    <link rel="stylesheet" href="../../css/help.css">
 </head>
 <body>
 <!--头部-->
@@ -16,7 +16,7 @@
     <div class="header-right">
         <div>
             <a href="#" class="none">
-                <img src="../images/keys-1.png">
+                <img src="../../images/keys-1.png">
             </a>
             <span class="language none" id="move-language">
                 <span>中文</span>
@@ -24,9 +24,9 @@
         </div>
         <div class="flex">
             <div>
-                <a href="./login.html">登录</a>
+                <a href="../login.html">登录</a>
                 <span>丨</span>
-                <a href="register.html">注册</a>
+                <a href="../register.html">注册</a>
             </div>
             <div class="hides">
                 <a href="#">用户名</a>
@@ -39,19 +39,19 @@
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target="#example-navbar-collapse">
-                                <img src="../images/menu.png" class="menus">
+                                <img src="../../images/menu.png" class="menus">
                             </button>
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li  class="show"><a href="home.html"><img src="../images/keys-1.png"></a></li>
-                                <li><a href="home.html">首页</a></li>
-                                <li><a href="buy.html">交易中心</a></li>
-                                <li><a href="profit.html">超级分红</a></li>
-                                <li><a href="user/user-property.html">用户中心</a></li>
-                                <li><a href="help.html">帮助中心</a></li>
-                                <li><a href="news.html">最新动态</a></li>
-                                <li><a href="market.html">行情中心</a></li>
+                                <li  class="show"><a href="../home.html"><img src="../../images/keys-1.png"></a></li>
+                                <li><a href="../home.html">首页</a></li>
+                                <li><a href="../buy/buy.html">交易中心</a></li>
+                                <li><a href="../profit.html">超级分红</a></li>
+                                <li><a href="user-property.html">用户中心</a></li>
+                                <li><a href="../help/help-register.html">帮助中心</a></li>
+                                <li><a href="../news/news.html">最新动态</a></li>
+                                <li><a href="../market.html">行情中心</a></li>
                             </ul>
                         </div>
                     </div>
@@ -75,15 +75,15 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <a href="home.html" class="logo"><img src="../images/keys-1.png"></a>
+            <a href="../home.html" class="logo"><img src="../../images/keys-1.png"></a>
             <ul class="nav navbar-nav" id="highlight">
-                <li><a href="home.html">首页</a></li>
-                <li><a href="buy.html">交易中心</a></li>
-                <li><a href="profit.html">超级分红</a></li>
-                <li><a href="user/user-property.html">用户中心</a></li>
-                <li><a href="help.html">帮助中心</a></li>
-                <li><a href="news.html" id="news">最新动态</a></li>
-                <li><a href="market.html">行情中心</a></li>
+                <li><a href="../home.html">首页</a></li>
+                <li><a href="../buy/buy.html">交易中心</a></li>
+                <li><a href="../profit.html">超级分红</a></li>
+                <li><a href="../user/user-property.html">用户中心</a></li>
+                <li><a href="../help/help-register.html" id="users">帮助中心</a></li>
+                <li><a href="../news/news.html">最新动态</a></li>
+                <li><a href="../market.html">行情中心</a></li>
                 <span class="language" id="pc-language">
                     <span>中文</span>
                 </span>
@@ -98,20 +98,56 @@
 <!--导航栏 end-->
 
 <!--内容-->
+<main class="main">
+    <div class="main-box">
+        <div class="help-box">
+            <div class="help-menu">
+                <a href="help-register.html">注册指南</a>
+                <a href="help-buy.html" class="bg-blue">交易指南</a>
+                <a href="help-topUp.html">币充值指南</a>
+                <a href="help-fetch.html">币提现指南</a>
+            </div>
+            <!--注册指南-->
+            <div class="help-main">
+                <div class="help-title">
+                    <span>交易指南</span>
+                    <span></span>
+                </div>
+                <div class="help-step">
+                    <div>
+                        <p>1.打开聚币网（www.jubi.com），点击【注册】，进入注册页面。也可以通过QQ登录入口，注册新账户或绑定已有账户。</p>
+                        <img src="../../images/register1.png">
+                    </div>
+                    <div>
+                        <p>2.填写常用的电子邮箱（用于登录和找回密码）、登录密码（需设置6位以上）、邀请码，并仔细阅读《注册协议》，点击【下一步】。</p>
+                        <img src="../../images/register2.png">
+                    </div>
+                </div>
+            </div>
+            <!--注册指南 end-->
+        </div>
+        <div class="main-bottom">
+            <div class="warning">
+                <p> 风险提示：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+            </div>
+        </div>
+    </div>
+</main>
 <!--内容 end-->
 
 <!--在线客服浮动窗口-->
 <div class="service_windows" id="service">
     <div class="service_title">
         <div class="service_left">
-            <img src="../images/service-icon.png">
+            <img src="../../images/service-icon.png">
             <span>在线客服</span>
         </div>
-        <img src="../images/close.png" class="close" id="close">
+        <img src="../../images/close.png" class="close" id="close">
     </div>
     <div class="service_body">
         <div class="service_view">
-            <img src="../images/service.png">
+            <img src="../../images/service.png">
             <div class="view_right">
                 <div class="view_main">
                     <div class="trigon-left"></div>
@@ -125,7 +161,7 @@
             </div>
         </div>
         <div class="service_view">
-            <img src="../images/service.png">
+            <img src="../../images/service.png">
             <div class="view_right">
                 <div class="view_main">
                     <div class="trigon-left"></div>
@@ -150,7 +186,7 @@
                     <div class="trigon-right"></div>
                 </div>
             </div>
-            <img src="../images/service.png">
+            <img src="../../images/service.png">
         </div>
     </div>
     <textarea class="user_input"></textarea>
@@ -165,29 +201,29 @@
 <footer class="footer">
     <div class="footer-left"></div>
     <div class="online" id="online">
-        <img src="../images/online.png">
+        <img src="../../images/online.png">
         <p>在线客服</p>
     </div>
     <div class="qq">
-        <img src="../images/code.png" class="code">
-        <img src="../images/QQ.png">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/QQ.png">
         <p>QQ</p>
     </div>
     <div class="wechat">
-        <img src="../images/code.png" class="code">
-        <img src="../images/wechat.png">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/wechat.png">
         <p>微信</p>
     </div>
     <div class="microblog">
-        <img src="../images/code.png" class="code">
-        <img src="../images/microblog.png">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/microblog.png">
         <p>微博</p>
     </div>
 </footer>
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="../component/modules.js"></script>
-<script src="../js/news.js"></script>
+<script src="../../component/modules.js"></script>
+<script src="../../js/help.js"></script>
 </body>
 </html>

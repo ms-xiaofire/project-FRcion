@@ -385,10 +385,10 @@
     .header-left {
         display: none;
     }
-    .none {
-        text-align: center;
-        display: inline-block;
-    }
+    /*.none {*/
+        /*text-align: center;*/
+        /*display: inline-block;*/
+    /*}*/
     .show {
         display: none !important;
     }
