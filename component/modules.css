@@ -346,11 +346,8 @@ input[type="number"]{
     align-items: center;
     background-color: #cccccc;
 }
-.footer-left {
+.footer-left img {
     width: 90px;
-    height: 90px;
-    background: url("../images/logo-1.png") center no-repeat;
-    background-size: cover;
 }
 .footer div {
     text-align: center;
