@@ -1,3 +1,21 @@
+.fileInputContainer{
+    height:256px;
+    background:url(upfile.png) center no-repeat;
+    position:relative;
+    width: 256px;
+}
+.fileInput{
+    height:256px;
+    overflow: hidden;
+    font-size: 300px;
+    position:absolute;
+    right:0;
+    top:0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    cursor:pointer;
+}
+
 .main {
     width: 100%;
     background: url(../images/bg.png) center no-repeat;
@@ -92,6 +110,7 @@
 }
 .logo {
     width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 .top-up {
@@ -187,13 +206,14 @@
 }
 /*个人信息 end*/
 /*实名认证*/
-.identity div span {
+.identity div {
     width: 230px;
     height: 150px;
     background-color: #ccc;
     margin: 10px 10px;
     border-radius: 10px;
     display: inline-block;
+    overflow: hidden;
 }
 /*实名认证 end*/
 /*充币*/
@@ -290,6 +310,10 @@
 .center-account {
     display: flex;
     align-items: center;
+}
+.center-account img {
+    width: 50px;
+    height: 50px;
 }
 .account-right {
     margin-left: 20px;
@@ -444,20 +468,6 @@
 }
 .messages a {
     color: #8e8e8e;
-}
-.messages-title {
-    text-align: center;
-    font-size: 16px;
-    color: #013567;
-}
-.messages-time {
-    color: #8e8e8e;
-    float: right;
-    margin-right: 15%;
-}
-.textPart div {
-    color: #8e8e8e;
-    margin: 40px 0;
 }
 /*系统消息 end*/
 /*弹窗*/

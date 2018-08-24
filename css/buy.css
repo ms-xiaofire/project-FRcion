@@ -121,7 +121,8 @@
 }
 .buy-options input {
     width: 80%;
-    padding: 0 5px;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
 }
 .buy-button {
     width: 80%;
@@ -261,7 +262,7 @@
     }
     .sale {
         width: 100%;
-        margin-right: 0;
+        margin-left: 0;
     }
     .repeal-box {
         width: 250px;

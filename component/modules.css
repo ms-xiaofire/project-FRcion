@@ -137,6 +137,10 @@ input[type="number"]{
 .header-none {
     display: none;
 }
+.header-right .header-none a img {
+    width: 40px;
+    height: 40px;
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -147,6 +151,8 @@ input[type="number"]{
     box-shadow: rgba(0, 0, 0, 0.35) 1px 5px 10px;
 }
 .nav-logo img{
+    width: 40px;
+    height: 40px;
     margin: 15px 0 0 15px;
 }
 .navbar {
@@ -347,11 +353,16 @@ input[type="number"]{
     background-color: #cccccc;
 }
 .footer-left img {
-    width: 90px;
+    width: 80px;
+    height: 80px;
 }
 .footer div {
     text-align: center;
     margin: 0 3%;
+}
+.footer div img {
+    width: 60px;
+    height: 60px;
 }
 .qq:hover {
     margin-top: -104px;

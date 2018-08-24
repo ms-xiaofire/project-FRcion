@@ -19,6 +19,10 @@
     align-items: center;
     margin: 30px 0;
 }
+.news-main img {
+    min-width: 230px;
+    height: 150px;
+}
 .news-right {
     margin-left: 20px;
 }
@@ -55,20 +59,6 @@
     display: inline;
 }
 /*分页 end*/
-.messages-title {
-    text-align: center;
-    font-size: 16px;
-    color: #013567;
-}
-.messages-time {
-    color: #8e8e8e;
-    float: right;
-    margin-right: 15%;
-}
-.textPart div {
-    color: #8e8e8e;
-    margin: 40px 0;
-}
 
 @media screen and (max-width: 870px) {
     .main-box {
