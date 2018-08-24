@@ -14,37 +14,36 @@
         <span>欢迎来到FRcion</span>
     </div>
     <div class="header-right">
-        <div>
-            <a href="#" class="none">
+        <div class="header-none">
+            <a href="home.html">
                 <img src="../images/keys-1.png">
             </a>
-            <span class="language none" id="move-language">
+            <span class="language header-none" id="move-language">
                 <span>中文</span>
             </span>
         </div>
-        <div class="flex">
-            <div>
+        <div class="header-nav">
+            <div class="header-show">
                 <a href="./login.html">登录</a>
                 <span>丨</span>
-                <a href="register.html">注册</a>
+                <a href="register/register1.html">注册</a>
             </div>
-            <div class="hides">
+            <div class="header-none">
                 <a href="#">用户名</a>
                 <span>丨</span>
-                <a href="#" class="out">退出</a>
+                <a href="#" class="orange">退出</a>
             </div>
             <div>
-                <nav class="navbar navbar-default none" role="navigation">
+                <nav class="navbar navbar-default header-none" role="navigation">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target="#example-navbar-collapse">
-                                <img src="../images/menu.png" class="menus">
+                                <img src="../images/menu.png">
                             </button>
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li  class="show"><a href="home.html"><img src="../images/keys-1.png"></a></li>
                                 <li><a href="home.html">首页</a></li>
                                 <li><a href="buy/buy.html">交易中心</a></li>
                                 <li><a href="profit.html">超级分红</a></li>
@@ -63,7 +62,7 @@
 <!--头部 end-->
 
 <!--导航栏-->
-<nav class="navbar navbar-default show shabow" role="navigation">
+<nav class="navbar navbar-default header-shadow" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -75,9 +74,11 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <a href="home.html" class="logo"><img src="../images/keys-1.png"></a>
+            <a href="home.html" class="nav-logo">
+                <img src="../images/keys-1.png">
+            </a>
             <ul class="nav navbar-nav">
-                <li><a href="home.html" id="home">首页</a></li>
+                <li><a href="home.html" id="nav-light">首页</a></li>
                 <li><a href="buy/buy.html">交易中心</a></li>
                 <li><a href="profit.html">超级分红</a></li>
                 <li><a href="user/user-property.html">用户中心</a></li>
@@ -103,11 +104,11 @@
         <div>欢迎来到FRcion</div>
     </div>
     <div class="main-body">
-        <div class="main-box">
+        <div class="main-box blue">
             <div class="title">
                 <p>币种交易</p>
             </div>
-            <div class="menu table-responsive">
+            <div class="menus table-responsive">
                 <form>
                     <table class="table">
                         <thead>
@@ -129,10 +130,10 @@
                             <td>56312</td>
                             <td>
                                 <img src="../images/up.png">
-                                <span class="state">0.652%</span>
+                                <span class="green">0.652%</span>
                             </td>
                             <td></td>
-                            <td><button type="button" class="btn btn-default">去交易</button></td>
+                            <td><a href="buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                         </tr>
                         <tr>
                             <td>KEYS/ETH</td>
@@ -141,10 +142,10 @@
                             <td>56312</td>
                             <td>
                                 <img src="../images/down.png">
-                                <span class="state">0.652%</span>
+                                <span class="orange">0.652%</span>
                             </td>
                             <td></td>
-                            <td><button type="button" class="btn btn-default">去交易</button></td>
+                            <td><a href="buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                         </tr>
                         <tr>
                             <td>KEYS/ETH</td>
@@ -153,10 +154,10 @@
                             <td>56312</td>
                             <td>
                                 <img src="../images/up.png">
-                                <span class="state">0.652%</span>
+                                <span class="green">0.652%</span>
                             </td>
                             <td></td>
-                            <td><button type="button" class="btn btn-default">去交易</button></td>
+                            <td><a href="buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                         </tr>
                         </tbody>
                     </table>
@@ -165,14 +166,14 @@
             <div class="title">
                 <p>【KEYS生态通证简介】</p>
             </div>
-            <div class="intro">
+            <div class="intro menu">
                 <p>比特比（BitCoin）的概念最初由中本聪在2009年提出，根据中本聪的思路设计发布的开源软件以及建构其上的P2P网络。比特比是一种P2P形式的数字货币。点对点的传输意味着一个去中心化的支付系统。</p>
                 <p>与大多数货币不同，比特比不依靠特定货币机构发行，它依据特定算法，通过大量的计算产生，比特比经济使用整个P2P网络中众多节点构成的分布式数据库来确认并记录所有的交易行为，并使用密码学的设计来确保货币流通各个环节安全性。P2P的去中心化特性与算法本身可以确保无法通过大量制造比特比来人为操控货币。基于密码学的设计可以使比特比只能被真实的拥有者转移或支付。这同样确保了货币所有权与流通交易的匿名性。比特比与其他虚拟货币最大的不同，是其总数量非常有限，具有极强的稀缺性。该货币系统曾在4年内只有不超过1050万个，之后的总数量将被永久限制在2100万个。</p>
             </div>
             <div class="title">
                 <p>友情链接</p>
             </div>
-            <div class="partner">
+            <div class="menu">
                 <div class="col-md-2 col-sm-4 col-xs-6 text-center">
                     <img src="../images/code.png" class="link">
                 </div>
@@ -192,9 +193,11 @@
                     <img src="../images/code.png" class="link">
                 </div>
             </div>
-            <div class="warning">
-                <p> 风险提示：</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+            <div class="main-bottom">
+                <div class="warning">
+                    <p> 风险提示：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+                </div>
             </div>
         </div>
    </div>

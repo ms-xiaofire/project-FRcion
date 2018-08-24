@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>行情中心</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
     <link rel="stylesheet" href="../component/modules.css">
     <link rel="stylesheet" href="../css/market.css">
 </head>
@@ -14,37 +15,36 @@
         <span>欢迎来到FRcion</span>
     </div>
     <div class="header-right">
-        <div>
-            <a href="#" class="none">
+        <div class="header-none">
+            <a href="home.html">
                 <img src="../images/keys-1.png">
             </a>
-            <span class="language none" id="move-language">
+            <span class="language header-none" id="move-language">
                 <span>中文</span>
             </span>
         </div>
-        <div class="flex">
-            <div>
+        <div class="header-nav">
+            <div class="header-show">
                 <a href="./login.html">登录</a>
                 <span>丨</span>
-                <a href="register.html">注册</a>
+                <a href="register/register1.html">注册</a>
             </div>
-            <div class="hides">
+            <div class="header-none">
                 <a href="#">用户名</a>
                 <span>丨</span>
-                <a href="#" class="out">退出</a>
+                <a href="#" class="red">退出</a>
             </div>
             <div>
-                <nav class="navbar navbar-default none" role="navigation">
+                <nav class="navbar navbar-default header-none" role="navigation">
                     <div class="container-fluid">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse"
                                     data-target="#example-navbar-collapse">
-                                <img src="../images/menu.png" class="menus">
+                                <img src="../images/menu.png">
                             </button>
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li  class="show"><a href="home.html"><img src="../images/keys-1.png"></a></li>
                                 <li><a href="home.html">首页</a></li>
                                 <li><a href="buy/buy.html">交易中心</a></li>
                                 <li><a href="profit.html">超级分红</a></li>
@@ -63,7 +63,7 @@
 <!--头部 end-->
 
 <!--导航栏-->
-<nav class="navbar navbar-default show shabow" role="navigation">
+<nav class="navbar navbar-default header-shadow" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -75,15 +75,17 @@
             </button>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <a href="home.html" class="logo"><img src="../images/keys-1.png"></a>
-            <ul class="nav navbar-nav" id="highlight">
+            <a href="home.html" class="nav-logo">
+                <img src="../images/keys-1.png">
+            </a>
+            <ul class="nav navbar-nav">
                 <li><a href="home.html">首页</a></li>
                 <li><a href="buy/buy.html">交易中心</a></li>
                 <li><a href="profit.html">超级分红</a></li>
                 <li><a href="user/user-property.html">用户中心</a></li>
                 <li><a href="help/help-register.html">帮助中心</a></li>
                 <li><a href="news/news.html">最新动态</a></li>
-                <li><a href="market.html" id="market">行情中心</a></li>
+                <li><a href="market.html" id="nav-light">行情中心</a></li>
                 <span class="language" id="pc-language">
                     <span>中文</span>
                 </span>
@@ -98,6 +100,320 @@
 <!--导航栏 end-->
 
 <!--内容-->
+<main class="main">
+    <div class="main-box">
+        <div class="main-body">
+            <div class="market-title">
+                    <div class="title-left" id="currency">
+                        <img src="../images/usdt-1.png">
+                        <div class="currency">
+                            <span id="icon">ETH/USDT</span>
+                            <i class="iconfont icon-xiala-sanjiaoxing"></i>
+                            <ul class="iconTab">
+                                <li>ETH/USDT</li>
+                                <li>KEYS/ETH</li>
+                                <li>USDT/KEYS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="title-right">
+                        <div class="price-nav">
+                            <div class="price">
+                                <p class="new-price">11，5201</p>
+                                <span>最新价</span>
+                            </div>
+                            <div class="price">
+                                <p class="orange">12，0000</p>
+                                <span>最高价</span>
+                            </div>
+                            <div class="price">
+                                <p class="green">1，0000</p>
+                                <span>最低价</span>
+                            </div>
+                        </div>
+                        <div class="price-nav">
+                            <div class="price">
+                                <p>10，0000</p>
+                                <span>买一价</span>
+                            </div>
+                            <div class="price">
+                                <p>10，0000</p>
+                                <span>卖一价</span>
+                            </div>
+                            <div class="price">
+                                <p>38，0000</p>
+                                <span>24H成交量</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="market-body">
+                <div class="market-left">
+                    <div class="chart"></div>
+                    <div class="order">
+                        <label class="blue">买卖盘</label>
+                        <form class="gray table-responsive">
+                            <table class="table borders order-table">
+                                <thead>
+                                <tr>
+                                    <th>折合（￥）</th>
+                                    <th>买入量</th>
+                                    <th>买入价（￥）</th>
+                                    <th>折合（￥）</th>
+                                    <th>卖出量</th>
+                                    <th>买出价（￥）</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>250，0000</td>
+                                    <td>100</td>
+                                    <td class="orange">25，1421</td>
+                                    <td>1，2414</td>
+                                    <td>1000</td>
+                                    <td class="green">3，2454</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="market-right">
+                    <div>
+                        <label class="blue">最新成交</label>
+                        <form class="gray table-responsive">
+                            <table class="table borders new-table">
+                                <thead>
+                                <tr>
+                                    <th>时间</th>
+                                    <th>价格</th>
+                                    <th>数量</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="green">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                                <tbody>
+                                <tr>
+                                    <td>08:00:00</td>
+                                    <td class="orange">1，0000</td>
+                                    <td>1，0000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <div class="warning">
+                <p> 风险提示：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+            </div>
+        </div>
+    </div>
+</main>
 <!--内容 end-->
 
 <!--在线客服浮动窗口-->

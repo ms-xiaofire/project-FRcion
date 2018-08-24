@@ -32,6 +32,16 @@ $(document).ready(function () {
         $('#submit').hide();
     });
     // 个人信息 end
+    //提币
+    $('#addIcon').click(function () {
+        $('.fetch-dim').addClass('dim');
+        $('.fetchAddress').show();
+    });
+    $('.shuts').click(function () {
+        $('.fetch-dim').removeClass('dim');
+        $('.fetchAddress').hide();
+    });
+    //提币 end
     //用户中心
     $('.phone').click(function () {
         $('.user-dim').addClass('dim');
@@ -48,7 +58,6 @@ $(document).ready(function () {
     });
     // 用户中心 end
     // 邀请好友
-    // 邀请好友 end
     $('.invite').click(function () {
         $('.poster-dim').addClass('dim');
         $('.poster').show();
@@ -57,4 +66,5 @@ $(document).ready(function () {
         $('.poster-dim').removeClass('dim');
         $('.poster').hide();
     })
+    // 邀请好友 end
 });

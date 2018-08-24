@@ -1,37 +1,6 @@
 $(document).ready(function () {
     //导航栏高亮
-    // let ids = $('#test>li>a').attr('id');
-    // console.log(ids)
-    // $('#'+ids).css({
-    //     'color': '#fff',
-    //     'background-color': '#013567'
-    // });
-    // $('#home').addClass('highlight');
-    $('#home').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#buy').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#profit').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#users').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#help').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#news').css({
-        'color': '#fff',
-        'background-color': '#013567'
-    });
-    $('#market').css({
+    $('#nav-light').css({
         'color': '#fff',
         'background-color': '#013567'
     });

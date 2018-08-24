@@ -1,25 +1,97 @@
-
-.highlight {
+/*公共样式*/
+.white {
+    color: #fff!important;
+}
+.green {
+    color: #009900!important;
+}
+.orange {
+    color: orangered!important;
+}
+.red {
+    color: red!important;
+}
+.blue {
+    color: #013567!important;
+}
+.gray {
+    color: #8e8e8e!important;
+}
+.bg-white {
+    background-color: #fff!important;
+}
+.bg-red {
+    background-color: red!important;
+}
+.bg-blue {
+    background-color: #013567!important;
+}
+.bg-green {
+    background-color: #669900!important;
+}
+.bg-gray {
+    background-color: #8e8e8e!important;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    text-decoration: none;
+}
+input {
+    padding: 0 5px;
+}
+/*input的type为number时,取消右边上下箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
+/*交易按钮*/
+.goBuy {
+    color: #013567;
+    border: 1px solid #013567;
+}
+.goBuy:hover {
     color: #fff;
     background-color: #013567;
 }
+.goBuy:focus {
+    color: #fff;
+    background-color: #013567;
+}
+/*确认按钮*/
+.sure-button {
+    margin: 20px 0;
+    color: #fff;
+    padding: 1px 20px;
+    background-color: #013567;
+    border: none;
+    border-radius: 5px;
+}
+.sure-left {
+    margin-left: 85px;
+}
+/*确认按钮 end*/
+/*表单*/
+.table {
+    min-width: 750px;
+    color: #013567;
+    border-collapse: inherit;
+}
+.table thead {
+    background-color: #ccd6e0;
+}
+.table thead tr th, .table tbody tr td {
+    text-align: center;
+    border: none;
+    vertical-align: middle;
+}
+/*公共样式 end*/
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f2f2f2;
-}
-.header-left {
-    padding: 5px 0;
-    color: #024d99;
-}
-.header-right {
-    padding: 6px 0;
-    color: #024d99;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
+/*选择语言*/
 .language {
     border: 1px solid #000000;
     border-radius: 10px;
@@ -44,25 +116,37 @@
     background-color: #013567;
     cursor: pointer;
 }
-.none {
+/*选择语言 end*/
+/*头部*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+}
+.header-left {
+    padding: 5px 0;
+    color: #024d99;
+}
+.header-right {
+    padding: 6px 0;
+    color: #024d99;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.header-none {
     display: none;
 }
-.flex {
+.header-nav {
     display: flex;
     align-items: center;
 }
-.hides {
-    display: none;
-}
-.out {
-    color: #a82127;
-}
-
+/*头部 end*/
 /*响应式导航栏*/
-.shabow {
+.header-shadow {
     box-shadow: rgba(0, 0, 0, 0.35) 1px 5px 10px;
 }
-.logo img{
+.nav-logo img{
     margin: 15px 0 0 15px;
 }
 .navbar {
@@ -97,32 +181,11 @@
 .navbar-default .navbar-toggle:focus {
     background-color: #fff;
 }
-.menus {
+.navbar-toggle img {
     margin: 0 15px 0 10px;
 }
-
-.green {
-    color: #009900;
-}
-.orange {
-    color: orangered;
-}
-.red {
-    color: red;
-}
-.blue {
-    color: #013567;
-}
-.gray {
-    color: #8e8e8e;
-}
-.bg-red {
-    background-color: red;
-}
-.bg-green {
-    background-color: #669900;
-}
-
+/*响应式导航栏 end*/
+/*在线客服*/
 .service_windows {
     width: 500px;
     background-color: #f2f2f2;
@@ -176,6 +239,7 @@
     border-radius: 0;
     background: rgba(0,0,0,0.1);
 }
+/*在线客服*/
 .service_view {
     display: flex;
 }
@@ -261,8 +325,20 @@
 .sent:focus {
     color: #fff;
 }
-
-
+/*在线客服 end*/
+/*底部警告信息*/
+.main-bottom {
+    margin: 50px auto 0;
+    padding: 0 100px;
+    position: relative;
+}
+.warning {
+    color: #a82127;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+/*底部警告信息 end*/
+/*底部*/
 .footer {
     padding: 20px 0;
     display: flex;
@@ -307,6 +383,7 @@
     bottom: 5px;
     display: none;
 }
+/*底部 end*/
 
 
 @media screen and (min-width: 992px){
@@ -344,12 +421,24 @@
         margin-left: 15px;
     }
     .language {
-        display: none;
+        display: inline-block!important;
+        text-align: center;
+        margin-left: 10px;
     }
     .tab-language {
         top: 52px;
         left: 58px;
         right: auto;
+        margin-left: 10px;
+    }
+    .header-shadow {
+        display: none;
+    }
+    .header-none {
+        display: block;
+    }
+    .header-show {
+        display: none;
     }
     .navbar-nav {
         width: 150px;
@@ -379,29 +468,28 @@
     .navbar-default .navbar-collapse {
         position: absolute;
         right: 0;
-        top: 49px;
+        top: 42px;
         width: 150px;
     }
     .header-left {
         display: none;
-    }
-    /*.none {*/
-        /*text-align: center;*/
-        /*display: inline-block;*/
-    /*}*/
-    .show {
-        display: none !important;
     }
     .navbar-default .navbar-nav>li>a {
         margin-left: 30px;
         border-bottom: 1px solid;
         line-height: 40px;
     }
-
+    /*在线客服*/
     .service_windows {
         width: 300px;
         margin: -150px 0 0 -150px;
     }
+    /*在线客服 end*/
+    /*底部警告信息*/
+    .main-bottom {
+        display: none;
+    }
+    /*底部警告信息 end*/
     /*底部*/
     .footer {
         padding: 0;

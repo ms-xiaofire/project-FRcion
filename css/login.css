@@ -31,10 +31,9 @@
     padding-bottom: 30px;
 }
 .main-body input {
-    text-align: left;
-    padding: 0;
     background-color: transparent;
     border: 1px solid #fff;
+    border-radius: 5px;
 }
 .main-body input:hover {
     background-color: transparent;
@@ -51,9 +50,6 @@
     margin: 20px auto;
     display: block;
 }
-input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
-    -webkit-appearance:textfield;
-}
 .submit {
     width: 170px;
     background-color: #034c99;
@@ -66,19 +62,13 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
 .submit:focus {
     color: #fff;
 }
-.main-bottom {
+.login-bottom {
     width: 170px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
-.main-bottom a {
+.login-bottom a {
     color: #fff;
-}
-.main-bottom a:hover {
-    text-decoration: none;
-}
-.main-bottom a:focus {
-    text-decoration: none;
 }
 

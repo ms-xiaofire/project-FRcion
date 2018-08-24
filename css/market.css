@@ -1,0 +1,155 @@
+.main {
+    width: 100%;
+    min-height: 80vh;
+    background: url(../images/bg.png) center no-repeat;
+    background-size: cover;
+}
+.main-box {
+    width: 80%;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.market-title {
+    padding: 30px 100px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+}
+.title-left {
+    text-align: center;
+    line-height: 52px;
+    color: #013567;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.title-left img {
+    margin-right: 10px;
+}
+.currency {
+    min-width: 100px;
+}
+.iconTab {
+    width: 100px;
+    padding: 0;
+    border: 1px solid gray;
+    background-color: #fff;
+    margin-left: -10px;
+    list-style: none;
+    position: absolute;
+    top: 216px;
+    display: none;
+}
+.iconTab li:hover {
+    color: #fff;
+    background-color: #013567;
+}
+.title-right {
+    flex: 1;
+    display: flex;
+}
+.price-nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.price {
+    min-width: 70px;
+    text-align: center;
+}
+.price span {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+.new-price {
+    color: orangered;
+    font-size: 16px;
+}
+/*交易详情*/
+.market-body {
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.market-left {
+    width: 70%;
+}
+.chart {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+    border: 1px solid #8e8e8e;
+}
+.order {
+    margin-top: 30px;
+}
+.market-right {
+    width: 25%;
+}
+.order-table {
+    min-width: 750px;
+}
+.new-table {
+    min-width: 300px;
+}
+.table thead tr th {
+    text-align: center;
+}
+.table tbody tr td {
+    text-align: center;
+    vertical-align: middle;
+}
+.borders {
+    border: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1200px){
+    .iconTab {
+        top: 265px;
+    }
+    .title-right {
+        display: block;
+    }
+    .price-nav {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .price p {
+        margin: 0;
+    }
+    .market-body {
+        display: block;
+    }
+    .market-left {
+        width: 100%;
+    }
+    .market-right {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px){
+    .main-box {
+        width: 100%;
+        min-height: auto;
+    }
+    .main-market {
+        padding: 20px 0;
+    }
+    .market-title {
+        padding: 30px 10px;
+    }
+    .iconTab {
+        top: 195px;
+    }
+    .market-body {
+        padding: 10px 10px 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    .title-left {
+        display: block;
+    }
+    .iconTab {
+        top: 198px;
+    }
+}

@@ -69,20 +69,6 @@
     color: #8e8e8e;
     margin: 40px 0;
 }
-/*底部警告信息*/
-.main-bottom {
-    /*width: 80%;*/
-    margin: 0 auto;
-    padding: 0 100px;
-    position: relative;
-    /*bottom: 80px;*/
-}
-.warning {
-    color: #a82127;
-    line-height: 24px;
-    margin-bottom: 50px;
-}
-/*底部警告信息 end*/
 
 @media screen and (max-width: 870px) {
     .main-box {
@@ -91,9 +77,6 @@
     .news-box {
         padding: 20px 10px;
         display: block;
-    }
-    .main-bottom {
-        display: none;
     }
 }
 @media screen and (max-width: 480px){

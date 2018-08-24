@@ -10,11 +10,6 @@ $(document).ready(function () {
             window.event.cancelBubble = true;
         }
     }
-    $('.goBuy').click(function () {
-        $('#shopping').hide();
-        $('.main-buy').show();
-        $('.buy-body').css('display', 'flex');
-    })
     //币种选择框收起
     $(document).click(function () {
         $('.iconTab').slideUp();

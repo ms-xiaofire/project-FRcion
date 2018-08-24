@@ -101,33 +101,7 @@
 .forms {
     overflow-x: auto;
 }
-.table {
-    min-width: 750px;
-    color: #013567;
-    border-collapse: inherit;
-}
-.table thead {
-    background-color: #ccd6e0;
-}
-.table thead tr th, .table tbody tr td {
-    text-align: center;
-    border: none;
-}
-.table tbody tr td {
-    text-align: center;
 
-}
-/*底部警告信息*/
-.main-bottom {
-    width: 80%;
-    margin: 0 auto;
-    position: relative;
-}
-.warning {
-    color: #a82127;
-    line-height: 24px;
-    margin-bottom: 50px;
-}
 @media screen and (max-width: 768px){
     .main-box {
         width: 100%;
@@ -155,8 +129,5 @@
     }
     .main-down {
         padding: 0 10px 20px;
-    }
-    .main-bottom {
-        display: none;
     }
 }

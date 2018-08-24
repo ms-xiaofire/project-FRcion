@@ -1,16 +1,3 @@
-.input {
-    border: 1px solid #013567;
-    border-radius: 5px;
-    padding: 2px 5px;
-    margin: 0 5px;
-}
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-}
-.dim {
-    filter: blur(5px);
-}
-
 .main {
     width: 100%;
     background: url(../images/bg.png) center no-repeat;
@@ -28,6 +15,7 @@ input::-webkit-inner-spin-button {
     padding: 50px 100px;
     margin-bottom: 50px;
 }
+/*用户中心菜单*/
 .user-menu {
     width: 110px;
     margin-right: 40px;
@@ -50,9 +38,8 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
     background-color: #013567;
 }
-.bg-blue {
-    background-color: #013567!important;
-}
+/*用户中心菜单 end*/
+/*title*/
 .user-main {
     flex: 1;
     overflow: hidden;
@@ -90,6 +77,8 @@ input::-webkit-inner-spin-button {
     border-radius: 3px;
     margin-left: 5px;
 }
+/*title end*/
+/*账户资产*/
 .myKEY {
     color: #013567;
     margin-bottom: 30px;
@@ -101,28 +90,6 @@ input::-webkit-inner-spin-button {
 .myKEY p span {
     margin-right: 5px;
 }
-.table {
-    min-width: 750px;
-    color: #013567;
-    border-collapse: inherit;
-}
-.table thead {
-    background-color: #ccd6e0;
-}
-.table thead tr th, .table tbody tr td {
-    text-align: center;
-    border: none;
-    vertical-align: middle;
-}
-.table a {
-    color: #013567;
-}
-.table a:hover {
-    text-decoration: none;
-}
-.table a:focus {
-    text-decoration: none;
-}
 .logo {
     width: 20px;
     margin-right: 10px;
@@ -130,24 +97,7 @@ input::-webkit-inner-spin-button {
 .top-up {
     margin: 0 5px;
 }
-.top-up:hover {
-    text-decoration: none;
-}
-.top-up:focus {
-    text-decoration: none;
-}
-.goBuy {
-    color: #013567;
-    border: 1px solid #013567;
-}
-.goBuy:hover {
-    color: #fff;
-    background-color: #013567;
-}
-.goBuy:focus {
-    color: #fff;
-    background-color: #013567;
-}
+/*账户资产 end*/
 /*分页*/
 .pagination {
     float: right;
@@ -160,6 +110,7 @@ input::-webkit-inner-spin-button {
     margin: 0 5px;
     display: inline;
 }
+/*分页 end*/
 /*修改密码*/
 .password button {
     width: 200px;
@@ -184,6 +135,10 @@ input::-webkit-inner-spin-button {
     text-align: right;
     min-width: 112px;
 }
+.changePwd div input {
+    border-radius: 5px;
+    border: 1px solid #013567;
+}
 .pwd-none {
     display: none !important;
 }
@@ -207,6 +162,9 @@ input::-webkit-inner-spin-button {
     text-align: left;
     margin: 0;
 }
+.alter {
+    cursor: pointer;
+}
 .mine-city {
     width: 90px;
     display: flex;
@@ -214,28 +172,26 @@ input::-webkit-inner-spin-button {
 }
 .nickname-input {
     flex: 1;
+    display: none;
 }
 .nickname-input input {
     width: 100%;
-    padding: 0 5px;
     border-radius: 5px;
     border: 1px solid #8e8e8e;
 }
+.place-select {
+    display: none;
+}
 .sure {
-    margin: 20px 0 20px 85px;
-    color: #fff;
-    padding: 1px 20px;
-    background-color: #013567;
-    border: none;
-    border-radius: 5px;
+    display: none;
 }
 /*个人信息 end*/
 /*实名认证*/
-.identity span {
-    width: 150px;
-    height: 100px;
+.identity div span {
+    width: 230px;
+    height: 150px;
     background-color: #ccc;
-    margin: 0 10px;
+    margin: 10px 10px;
     border-radius: 10px;
     display: inline-block;
 }
@@ -243,6 +199,10 @@ input::-webkit-inner-spin-button {
 /*充币*/
 .recharge div {
     margin: 10px 0;
+}
+.recharge div input {
+    border: 1px solid #013567;
+    border-radius: 5px;
 }
 /*充币 end*/
 /*提币*/
@@ -271,8 +231,59 @@ input::-webkit-inner-spin-button {
     min-width: 70px;
     margin: 0;
 }
+.iconCount div input {
+    border: 1px solid #013567;
+    border-radius: 5px;
+}
 .iconExplain {
     margin-bottom: 30px;
+}
+.fetchAddress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.address-box {
+    width: 400px;
+    color: #fff;
+    background-color: #013567;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+}
+.address-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+    border-bottom: 1px solid #fff;
+}
+.address-title span {
+    font-size: 16px;
+}
+.address-title img {
+    width: 16px;
+    cursor: pointer;
+}
+.address-main {
+    padding: 20px 0 0 20px;
+}
+.address-main span {
+    font-size: 12px;
+}
+.address-main input {
+    color: #000;
+    border: 1px solid #013567;
+    border-radius: 5px;
+}
+.address-bottom {
+    padding: 20px 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.address-bottom button {
+    height: 22px;
+    padding: 0 15px;
 }
 /*提币 end*/
 /*用户中心*/
@@ -288,7 +299,7 @@ input::-webkit-inner-spin-button {
     display: inline-block;
 }
 .user-body {
-    width: 60%;
+    width: 65%;
 }
 .center-state {
     display: flex;
@@ -297,20 +308,8 @@ input::-webkit-inner-spin-button {
     margin: 10px 0;
     font-size: 12px;
 }
-.center-state a:hover {
-    text-decoration: none;
-}
-.center-state a:focus {
-    text-decoration: none;
-}
 .asset {
     margin: 30px 0;
-}
-.asset a:hover {
-    text-decoration: none;
-}
-.asset a:focus {
-    text-decoration: none;
 }
 .asset-main {
     display: flex;
@@ -349,6 +348,10 @@ input::-webkit-inner-spin-button {
 .binding-title span {
     font-size: 16px;
 }
+.binding-title img {
+    width: 16px;
+    cursor: pointer;
+}
 .binding-main {
     padding: 20px;
 }
@@ -356,7 +359,9 @@ input::-webkit-inner-spin-button {
     font-size: 12px;
 }
 .binding-main input {
-    color: #8e8e8e;
+    color: #000;
+    border: 1px solid #013567;
+    border-radius: 5px;
 }
 .binding-bottom {
     padding: 20px;
@@ -373,10 +378,20 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 .invite-button {
+    color: #fff;
+    padding: 1px 20px;
     margin: 10px 0 20px 10px;
+    background-color: #013567;
+    border: none;
+    border-radius: 5px;
 }
 .invite {
+    color: #fff;
+    padding: 2px 20px;
     margin: 0;
+    background-color: #013567;
+    border: none;
+    border-radius: 5px;
 }
 .poster {
     position: fixed;
@@ -430,12 +445,6 @@ input::-webkit-inner-spin-button {
 .messages a {
     color: #8e8e8e;
 }
-.messages a:hover {
-    text-decoration: none;
-}
-.messages a:focus {
-    text-decoration: none;
-}
 .messages-title {
     text-align: center;
     font-size: 16px;
@@ -451,20 +460,11 @@ input::-webkit-inner-spin-button {
     margin: 40px 0;
 }
 /*系统消息 end*/
-/*底部警告信息*/
-.main-bottom {
-    /*width: 80%;*/
-    margin: 0 auto;
-    padding: 0 100px;
-    position: relative;
-    /*bottom: 80px;*/
+/*弹窗*/
+.dim {
+    filter: blur(5px);
 }
-.warning {
-    color: #a82127;
-    line-height: 24px;
-    margin-bottom: 50px;
-}
-
+/*弹窗 end*/
 @media  screen and (max-width: 1275px){
     .mine-service {
         display: block;
@@ -478,6 +478,10 @@ input::-webkit-inner-spin-button {
         padding: 20px 0;
         display: block;
     }
+    .user-title {
+        padding-left: 20px;
+        margin-top: 20px;
+    }
     .user-menu {
         width: 93%;
         margin: 0 auto;
@@ -489,8 +493,12 @@ input::-webkit-inner-spin-button {
         display: block;
     }
     .password, .changePwd {
+        text-align: center;
         width: 80%;
         margin: 0 auto;
+    }
+    .changePwd button {
+        margin-left: 0;
     }
     .user-body {
         margin: 0 auto;
@@ -501,8 +509,25 @@ input::-webkit-inner-spin-button {
     .asset-main {
         display: block;
     }
-    .main-bottom {
-        display: none;
+}
+@media screen and (max-width: 480px){
+    .user-body {
+        width: auto;
+        padding: 0 10px;
+    }
+    .identity {
+        text-align: center;
+        display: block;
+    }
+    .identity p {
+        text-align: center;
+    }
+    .identity button {
+        margin-left: 0;
+    }
+    .iconCount div {
+        text-align: center;
+        display: block;
     }
 }
 

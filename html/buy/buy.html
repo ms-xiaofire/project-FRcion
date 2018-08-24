@@ -9,630 +9,251 @@
     <link rel="stylesheet" href="../../css/buy.css">
 </head>
 <body>
-<div class="dim">
-    <!--头部-->
-    <header class="header">
-        <div class="header-left">
-            <span>欢迎来到FRcion</span>
-        </div>
-        <div class="header-right">
-            <div>
-                <a href="#" class="none">
-                    <img src="../../images/keys-1.png">
-                </a>
-                <span class="language none" id="move-language">
+<!--头部-->
+<header class="header">
+    <div class="header-left">
+        <span>欢迎来到FRcion</span>
+    </div>
+    <div class="header-right">
+        <div class="header-none">
+            <a href="../home.html">
+                <img src="../../images/keys-1.png">
+            </a>
+            <span class="language header-none" id="move-language">
                 <span>中文</span>
             </span>
+        </div>
+        <div class="header-nav">
+            <div class="header-show">
+                <a href="../login.html">登录</a>
+                <span>丨</span>
+                <a href="../register/register1.html">注册</a>
             </div>
-            <div class="flex">
-                <div>
-                    <a href="../login.html">登录</a>
-                    <span>丨</span>
-                    <a href="../register.html">注册</a>
-                </div>
-                <div class="hides">
-                    <a href="#">用户名</a>
-                    <span>丨</span>
-                    <a href="#" class="out">退出</a>
-                </div>
-                <div>
-                    <nav class="navbar navbar-default none" role="navigation">
-                        <div class="container-fluid">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target="#example-navbar-collapse">
-                                    <img src="../../images/menu.png" class="menus">
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li  class="show"><a href="../home.html"><img src="../../images/keys-1.png"></a></li>
-                                    <li><a href="../home.html">首页</a></li>
-                                    <li><a href="buy.html">交易中心</a></li>
-                                    <li><a href="../profit.html">超级分红</a></li>
-                                    <li><a href="../user/user-property.html">用户中心</a></li>
-                                    <li><a href="../help/help-register.html">帮助中心</a></li>
-                                    <li><a href="../news/news.html">最新动态</a></li>
-                                    <li><a href="../market.html">行情中心</a></li>
-                                </ul>
-                            </div>
+            <div class="header-none">
+                <a href="#">用户名</a>
+                <span>丨</span>
+                <a href="#" class="red">退出</a>
+            </div>
+            <div>
+                <nav class="navbar navbar-default header-none" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#example-navbar-collapse">
+                                <img src="../../images/menu.png">
+                            </button>
                         </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!--头部 end-->
-
-    <!--导航栏-->
-    <nav class="navbar navbar-default show shabow" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#example-navbar-collapse">
-                    <span class="sr-only">切换导航</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                <a href="../home.html" class="logo"><img src="../../images/keys-1.png"></a>
-                <ul class="nav navbar-nav" id="highlight">
-                    <li><a href="../home.html">首页</a></li>
-                    <li><a href="buy.html" id="buy">交易中心</a></li>
-                    <li><a href="../profit.html">超级分红</a></li>
-                    <li><a href="../user/user-property.html">用户中心</a></li>
-                    <li><a href="../help/help-register.html">帮助中心</a></li>
-                    <li><a href="../news/news.html">最新动态</a></li>
-                    <li><a href="../market.html">行情中心</a></li>
-                    <span class="language" id="pc-language">
-                    <span>中文</span>
-                </span>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <ul class="tab-language">
-        <li>English</li>
-        <li>中文</li>
-    </ul>
-    <!--导航栏 end-->
-
-    <!--内容-->
-    <main class="main">
-        <div class="main-box">
-            <div class="main-body">
-                <div class="table-responsive" id="shopping">
-                    <form>
-                        <table class="table tables">
-                            <thead>
-                            <tr>
-                                <th>交易对</th>
-                                <th>最新成交价格</th>
-                                <th>24小时成交量</th>
-                                <th>24小时成交额</th>
-                                <th>日涨跌</th>
-                                <th>价格趋势（3日）</th>
-                                <th>操作</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>KEYS/ETH</td>
-                                <td>6136.60000/￥40501.56</td>
-                                <td>90023</td>
-                                <td>56312</td>
-                                <td>
-                                    <img src="../../images/up.png">
-                                    <span class="state">0.652%</span>
-                                </td>
-                                <td></td>
-                                <td><button type="button" class="btn btn-default goBuy">去交易</button></td>
-                            </tr>
-                            <tr>
-                                <td>KEYS/ETH</td>
-                                <td>6136.60000/￥40501.56</td>
-                                <td>90023</td>
-                                <td>56312</td>
-                                <td>
-                                    <img src="../../images/down.png">
-                                    <span class="state">0.652%</span>
-                                </td>
-                                <td></td>
-                                <td><button type="button" class="btn btn-default goBuy">去交易</button></td>
-                            </tr>
-                            <tr>
-                                <td>KEYS/ETH</td>
-                                <td>6136.60000/￥40501.56</td>
-                                <td>90023</td>
-                                <td>56312</td>
-                                <td>
-                                    <img src="../../images/up.png">
-                                    <span class="state">0.652%</span>
-                                </td>
-                                <td></td>
-                                <td><button type="button" class="btn btn-default goBuy">去交易</button></td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </form>
-                </div>
-                <div class="main-buy">
-                    <div class="buy-title">
-                        <div class="title-left" id="currency">
-                            <span id="icon">ETH/USDT</span>
-                            <i class="iconfont icon-xiala-sanjiaoxing"></i>
-                            <ul class="iconTab">
-                                <li>ETH/USDT</li>
-                                <li>KEYS/ETH</li>
-                                <li>USDT/KEYS</li>
+                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li><a href="../home.html">首页</a></li>
+                                <li><a href="../buy/buy.html">交易中心</a></li>
+                                <li><a href="../profit.html">超级分红</a></li>
+                                <li><a href="../user/user-property.html">用户中心</a></li>
+                                <li><a href="../help/help-register.html">帮助中心</a></li>
+                                <li><a href="../news/news.html">最新动态</a></li>
+                                <li><a href="../market.html">行情中心</a></li>
                             </ul>
                         </div>
-                        <div class="title-right">
-                            <div class="price-nav">
-                                <div class="price">
-                                    <p class="new-price">11，5201</p>
-                                    <span>最新价</span>
-                                </div>
-                                <div class="price">
-                                    <p class="height-price">12，0000</p>
-                                    <span>最高价</span>
-                                </div>
-                                <div class="price">
-                                    <p class="low-price">1，0000</p>
-                                    <span>最低价</span>
-                                </div>
-                            </div>
-                            <div class="price-nav">
-                                <div class="price">
-                                    <p>10，0000</p>
-                                    <span>买一价</span>
-                                </div>
-                                <div class="price">
-                                    <p>10，0000</p>
-                                    <span>卖一价</span>
-                                </div>
-                                <div class="price">
-                                    <p>38，0000</p>
-                                    <span>24H成交量</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="buy-body">
-                    <div class="buy-left">
-                        <div class="chart"></div>
-                        <div class="myIcon">
-                            <div>
-                                <p>我的ETH币</p>
-                                <p>我的KETS币</p>
-                            </div>
-                            <div>
-                                <p>总资产：<span>200，5412</span></p>
-                                <p>总资产：<span>200，5412</span></p>
-                            </div>
-                            <div>
-                                <p>可用：<span class="green">8056</span></p>
-                                <p>可用：<span class="green">4，6653</span></p>
-                            </div>
-                            <div>
-                                <p>冻结：<span class="orange">7986</span></p>
-                                <p>冻结：<span class="orange">1，1456</span></p>
-                            </div>
-                        </div>
-                        <div class="buyIcon">
-                            <div class="buying">
-                                <p class="blue">买入KEYS币</p>
-                                <div class="deal">
-                                    <div class="buy-options">
-                                        <label>最佳买价：</label>
-                                        <span class="red">1，0000</span>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>买入单价：</label>
-                                        <input type="number" placeholder="请输入买入单价">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>最大可买：</label>
-                                        <span>500，2145</span>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>买入数量：</label>
-                                        <input type="number" placeholder="请输入要买入的数量">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>交易密码：</label>
-                                        <input type="number" placeholder="请输入交易密码">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>手续费：</label>
-                                        <div>
-                                            <span>2</span>
-                                            <span>（3%ETH）</span>
-                                        </div>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>交易额：</label>
-                                        <span>200ETH</span>
-                                    </div>
-                                    <button type="button" class="buy-button bg-red" id="buy-button">立即买入</button>
-                                    <div class="hint">
-                                        <p>温馨提示：</p>
-                                        <p>数字货币交易具有极高的风险，投资需谨慎！</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sale">
-                                <p class="blue">卖出KEYS币</p>
-                                <div class="deal">
-                                    <div class="buy-options">
-                                        <label>最佳卖价：</label>
-                                        <span class="green">1，0000</span>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>卖出单价：</label>
-                                        <input type="number" placeholder="请输入卖出单价">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>最大可卖：</label>
-                                        <span>500，2145</span>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>卖出数量：</label>
-                                        <input type="number" placeholder="请输入要卖出的数量">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>交易密码：</label>
-                                        <input type="number" placeholder="请输入交易密码">
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>手续费：</label>
-                                        <div>
-                                            <span>2</span>
-                                            <span>（3%ETH）</span>
-                                        </div>
-                                    </div>
-                                    <div class="buy-options">
-                                        <label>交易额：</label>
-                                        <span>200ETH</span>
-                                    </div>
-                                    <button type="button" class="buy-button bg-green" id="sale-button">立即卖出</button>
-                                    <div class="hint">
-                                        <p>温馨提示：</p>
-                                        <p>数字货币交易具有极高的风险，投资需谨慎！</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="buy-right">
-                        <div class="entrust">
-                            <label class="blue">委托信息</label>
-                            <form class="gray">
-                                <table class="table borders">
-                                    <thead>
-                                    <tr>
-                                        <th>类型</th>
-                                        <th>委托价格</th>
-                                        <th>委托数量</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖6</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖5</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖4</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖3</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖2</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖1</td>
-                                        <td class="green">3000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买1</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买2</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买3</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买4</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买5</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买6</td>
-                                        <td class="orange">2000</td>
-                                        <td>100</td>
-                                        <td><a href="#">委托</a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                        <div class="newBuy">
-                            <label class="blue">我的最新成交</label>
-                            <form class="gray">
-                                <table class="table borders">
-                                    <thead>
-                                    <tr>
-                                        <th>成交时间</th>
-                                        <th>类型</th>
-                                        <th>成交价格</th>
-                                        <th>成交数量</th>
-                                        <th>成交金额</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td><span>2018-07-15 </span><span> 15:14:24</span></td>
-                                        <td class="orange">买</td>
-                                        <td>100，0000</td>
-                                        <td>200，0000</td>
-                                        <td>200，0000</td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td><span>2018-07-15 </span><span> 15:14:24</span></td>
-                                        <td class="green">卖</td>
-                                        <td>100，0000</td>
-                                        <td>200，0000</td>
-                                        <td>200，0000</td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td><span>2018-07-15 </span><span> 15:14:24</span></td>
-                                        <td class="orange">买</td>
-                                        <td>100，0000</td>
-                                        <td>200，0000</td>
-                                        <td>200，0000</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                        <div class="myEntrust">
-                            <div>
-                                <label class="blue">我的委托</label>
-                                <span class="float-right">
-                                <select>
-                                <option>全部</option>
-                                <option>买</option>
-                                <option>卖</option>
-                            </select>
-                            <button type="button" class="btn">查询</button>
-                            </span>
-                            </div>
-                            <form class="gray">
-                                <table class="table borders">
-                                    <thead>
-                                    <tr>
-                                        <th>类型</th>
-                                        <th>委托价格</th>
-                                        <th>委托数量</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖</td>
-                                        <td class="green">3，0000</td>
-                                        <td>100</td>
-                                        <td><a href="#">撤销</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买</td>
-                                        <td class="orange">3，0000</td>
-                                        <td>100</td>
-                                        <td><a href="#">撤销</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>卖</td>
-                                        <td class="green">3，0000</td>
-                                        <td>100</td>
-                                        <td><a href="#">撤销</a></td>
-                                    </tr>
-                                    </tbody>
-                                    <tbody>
-                                    <tr>
-                                        <td>买</td>
-                                        <td class="orange">3，0000</td>
-                                        <td>100</td>
-                                        <td><a href="#">撤销</a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                </nav>
             </div>
-            <div class="main-bottom">
-                <div class="warning">
-                    <p> 风险提示：</p>
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <!--内容 end-->
-
-    <!--在线客服浮动窗口-->
-    <div class="service_windows" id="service">
-        <div class="service_title">
-            <div class="service_left">
-                <img src="../../images/service-icon.png">
-                <span>在线客服</span>
-            </div>
-            <img src="../../images/close.png" class="close" id="close">
-        </div>
-        <div class="service_body">
-            <div class="service_view">
-                <img src="../../images/service.png">
-                <div class="view_right">
-                    <div class="view_main">
-                        <div class="trigon-left"></div>
-                        <div class="view_box">
-                            <div class="view">
-                                <p>您好!</p>
-                            </div>
-                            <p class="time">14:25:38</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service_view">
-                <img src="../../images/service.png">
-                <div class="view_right">
-                    <div class="view_main">
-                        <div class="trigon-left"></div>
-                        <div class="view_box">
-                            <div class="view">
-                                <p>您好!</p>
-                            </div>
-                            <p class="time">14:25:38</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="service_view">
-                <div class="view_left">
-                    <div class="view_main flex-end">
-                        <div class="view_box">
-                            <div class="view">
-                                <p>您好!</p>
-                            </div>
-                            <p class="time">14:25:38</p>
-                        </div>
-                        <div class="trigon-right"></div>
-                    </div>
-                </div>
-                <img src="../../images/service.png">
-            </div>
-        </div>
-        <textarea class="user_input"></textarea>
-        <div class="service_bottom">
-            <button type="button" class="btn" id="closes">关闭</button>
-            <button type="button" class="btn sent">发送</button>
         </div>
     </div>
-    <!--在线客服浮动窗口 end-->
+</header>
+<!--头部 end-->
 
-    <!--尾部-->
-    <footer class="footer">
-        <div class="footer-left"></div>
-        <div class="online" id="online">
-            <img src="../../images/online.png">
-            <p>在线客服</p>
+<!--导航栏-->
+<nav class="navbar navbar-default header-shadow" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <div class="qq">
-            <img src="../../images/code.png" class="code">
-            <img src="../../images/QQ.png">
-            <p>QQ</p>
-        </div>
-        <div class="wechat">
-            <img src="../../images/code.png" class="code">
-            <img src="../../images/wechat.png">
-            <p>微信</p>
-        </div>
-        <div class="microblog">
-            <img src="../../images/code.png" class="code">
-            <img src="../../images/microblog.png">
-            <p>微博</p>
-        </div>
-    </footer>
-    <!--尾部 end-->
-</div>
-
-<!--撤销委托-->
-<div class="repeal">
-    <div class="repeal-box">
-        <div class="repeal-title">
-            <img src="../../images/close.png" class="shut">
-        </div>
-        <p class="repeal-body">确认撤销委托</p>
-        <div class="repeal-bottom">
-            <button type="button" class="btn shut">取消</button>
-            <button type="button" class="btn btn-default">确认</button>
+        <div class="collapse navbar-collapse" id="example-navbar-collapse">
+            <a href="../home.html" class="nav-logo">
+                <img src="../../images/keys-1.png">
+            </a>
+            <ul class="nav navbar-nav">
+                <li><a href="../home.html">首页</a></li>
+                <li><a href="../buy/buy.html" id="nav-light">交易中心</a></li>
+                <li><a href="../profit.html">超级分红</a></li>
+                <li><a href="../user/user-property.html">用户中心</a></li>
+                <li><a href="../help/help-register.html">帮助中心</a></li>
+                <li><a href="../news/news.html">最新动态</a></li>
+                <li><a href="../market.html">行情中心</a></li>
+                <span class="language" id="pc-language">
+                    <span>中文</span>
+                </span>
+            </ul>
         </div>
     </div>
+</nav>
+<ul class="tab-language">
+    <li>English</li>
+    <li>中文</li>
+</ul>
+<!--导航栏 end-->
+
+<!--内容-->
+<main class="main">
+    <div class="main-box">
+        <div class="main-body">
+            <div class="table-responsive tables">
+                <form>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>交易对</th>
+                            <th>最新成交价格</th>
+                            <th>24小时成交量</th>
+                            <th>24小时成交额</th>
+                            <th>日涨跌</th>
+                            <th>价格趋势（3日）</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>KEYS/ETH</td>
+                            <td>6136.60000/￥40501.56</td>
+                            <td>90023</td>
+                            <td>56312</td>
+                            <td>
+                                <img src="../../images/up.png">
+                                <span class="green">0.652%</span>
+                            </td>
+                            <td></td>
+                            <td><a href="buying.html" class="btn btn-default goBuy">去交易</a></td>
+                        </tr>
+                        <tr>
+                            <td>KEYS/ETH</td>
+                            <td>6136.60000/￥40501.56</td>
+                            <td>90023</td>
+                            <td>56312</td>
+                            <td>
+                                <img src="../../images/down.png">
+                                <span class="orange">0.652%</span>
+                            </td>
+                            <td></td>
+                            <td><a href="buying.html" class="btn btn-default goBuy">去交易</a></td>
+                        </tr>
+                        <tr>
+                            <td>KEYS/ETH</td>
+                            <td>6136.60000/￥40501.56</td>
+                            <td>90023</td>
+                            <td>56312</td>
+                            <td>
+                                <img src="../../images/up.png">
+                                <span class="green">0.652%</span>
+                            </td>
+                            <td></td>
+                            <td><a href="buying.html" class="btn btn-default goBuy">去交易</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <div class="warning">
+                <p> 风险提示：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
+            </div>
+        </div>
+    </div>
+</main>
+<!--内容 end-->
+
+<!--在线客服浮动窗口-->
+<div class="service_windows" id="service">
+    <div class="service_title">
+        <div class="service_left">
+            <img src="../../images/service-icon.png">
+            <span>在线客服</span>
+        </div>
+        <img src="../../images/close.png" class="close" id="close">
+    </div>
+    <div class="service_body">
+        <div class="service_view">
+            <img src="../../images/service.png">
+            <div class="view_right">
+                <div class="view_main">
+                    <div class="trigon-left"></div>
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service_view">
+            <img src="../../images/service.png">
+            <div class="view_right">
+                <div class="view_main">
+                    <div class="trigon-left"></div>
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service_view">
+            <div class="view_left">
+                <div class="view_main flex-end">
+                    <div class="view_box">
+                        <div class="view">
+                            <p>您好!</p>
+                        </div>
+                        <p class="time">14:25:38</p>
+                    </div>
+                    <div class="trigon-right"></div>
+                </div>
+            </div>
+            <img src="../../images/service.png">
+        </div>
+    </div>
+    <textarea class="user_input"></textarea>
+    <div class="service_bottom">
+        <button type="button" class="btn" id="closes">关闭</button>
+        <button type="button" class="btn sent">发送</button>
+    </div>
 </div>
-<!--撤销委托 end-->
+<!--在线客服浮动窗口 end-->
+
+<!--尾部-->
+<footer class="footer">
+    <div class="footer-left"></div>
+    <div class="online" id="online">
+        <img src="../../images/online.png">
+        <p>在线客服</p>
+    </div>
+    <div class="qq">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/QQ.png">
+        <p>QQ</p>
+    </div>
+    <div class="wechat">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/wechat.png">
+        <p>微信</p>
+    </div>
+    <div class="microblog">
+        <img src="../../images/code.png" class="code">
+        <img src="../../images/microblog.png">
+        <p>微博</p>
+    </div>
+</footer>
+<!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../component/modules.js"></script>
