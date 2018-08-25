@@ -17,7 +17,7 @@ required:必选项
 
 		// 默认值
 		settings=$.extend({
-			url:"../../component/city.min.js",
+			url:"city.min.js",
 			prov:null,
 			city:null,
 			dist:null,

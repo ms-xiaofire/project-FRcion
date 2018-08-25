@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+</head>
+<body>
+
+<div id="city">
+    <select class="prov"></select>
+    <select class="city" disabled="disabled"></select>
+    <select class="dist" disabled="disabled"></select>
+</div>
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="jquery.cityselect.js"></script>
+<script>
+    //三级联动 选择城市
+    $("#city").citySelect({
+        prov: "河南",
+        city: "郑州",
+        dist: "null",
+        nodata: "none"
+    })
+</script>
+</body>
+</html>

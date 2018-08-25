@@ -1,0 +1,108 @@
+文件夹:
+
+
+
+component: 公共样式
+city.min.js:              三级联动选择城市
+jquery.cityselect.js:     三级联动选择城市
+modules.css:              header/导航栏/footer公共样式
+modules.js:               header/导航栏/footer公共样式
+
+
+
+css: 每个页面的样式
+buy.css:                  交易中心样式
+help.css:                 帮助中心样式
+home.css:                 首页样式
+login.css:                登录页面样式
+market.css:               行情中心样式
+news.css:                 最新动态样式
+password.css:             忘记密码页面样式
+protocol.css:             服务协议页面样式
+register.css:             注册页面样式
+users.css:                用户中心样式
+
+
+
+
+html: 所有页面的文件夹
+
+buy: 交易中心文件夹
+buy.html:                 交易中心页面
+buying.html:              去交易页面
+
+help: 帮助中心文件夹
+help-buy.html:            交易指南页面
+help-fetch.html:          币提现指南页面
+help-register.html:       注册指南页面
+help-topUp.html:          币充值指南页面
+
+news: 最新动态文件夹
+news.html:                最新动态页面
+news-details.html:        最新动态详情页面
+
+register: 注册页面文件夹
+protocol.html:            服务协议页面
+register1.html:           注册第一步页面
+register2.html:           注册第二步页面
+register3.html:           注册第三步页面
+register4.html:           注册第四步页面
+
+user: 用户中心文件夹
+user-bargain.html:        我的成交
+user-center.html:         用户中心
+user-fetch.html:          提币
+user-history.html:        委托历史
+user-invite.html:         邀请好友
+user-manage.html:         委托管理
+user-messages.html:       系统消息详情
+user-mine.html:           个人信息
+user-property.html:       账户资产
+user-pwd.html:            修改密码
+user-realName.html:       实名认证
+user-record.html:         财务记录
+user-system.html:         系统消息
+user-topUp.html:          充币
+
+home.html:                首页
+login.html:               登录
+market.html:              行情中心
+password.html:            忘记密码
+
+
+
+
+js: javascriptJS 文件夹
+buy.js:                   交易中心
+help.js:                  帮助中心
+home.js:                  首页
+market.js:                行情中心
+news.js:                  最新动态
+register.js:              注册
+users.js:                 用户中心
+
+
+
+
+images: 图片文件夹
+
+iconfont: 公共小图标文件夹(不用管)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

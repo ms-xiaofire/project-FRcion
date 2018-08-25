@@ -132,7 +132,7 @@
     display: block;
 }
 .grid {
-    min-width: auto;
+    min-width: 480px;
 }
 .buy-right {
     width: 35%;

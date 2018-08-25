@@ -89,6 +89,10 @@ input[type="number"]{
     border: none;
     vertical-align: middle;
 }
+.iconNum {
+    max-width: 45px;
+    text-align: right!important;
+}
 /*公共样式 end*/
 
 /*选择语言*/
