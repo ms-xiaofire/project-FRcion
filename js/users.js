@@ -58,6 +58,34 @@ $(document).ready(function () {
             }
         }
     });
+    $('#oldLoginPwd').blur(function () {
+        let oldLoginPwd = $('#oldLoginPwd').val();
+        let newLoginPwd = $('#newLoginPwd').val();
+        if(oldLoginPwd !== '' && oldLoginPwd === newLoginPwd) {
+            layer.msg('新登录密码与旧密码不能相同');
+        }
+    });
+    $('#newLoginPwd').blur(function () {
+        let oldLoginPwd = $('#oldLoginPwd').val();
+        let newLoginPwd = $('#newLoginPwd').val();
+        if(oldLoginPwd !== '' && oldLoginPwd === newLoginPwd) {
+            layer.msg('新登录密码与旧密码不能相同');
+        }
+    });
+    $('#oldBuyPwd').blur(function () {
+        let oldBuyPwd = $('#oldBuyPwd').val();
+        let newBuyPwd = $('#newBuyPwd').val();
+        if(oldBuyPwd !== '' && oldBuyPwd === newBuyPwd) {
+            layer.msg('新交易密码与旧密码不能相同');
+        }
+    });
+    $('#newBuyPwd').blur(function () {
+        let oldBuyPwd = $('#oldBuyPwd').val();
+        let newBuyPwd = $('#newBuyPwd').val();
+        if(oldBuyPwd !== '' && oldBuyPwd === newBuyPwd) {
+            layer.msg('新交易密码与旧密码不能相同');
+        }
+    });
     // 修改密码 end
     // 个人信息
     $('#nickname').click(function () {
