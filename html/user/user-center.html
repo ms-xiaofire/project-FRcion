@@ -289,11 +289,11 @@
         </div>
         <div class="binding-main">
             <span>手机号码：</span>
-            <input type="number">
+            <input type="number" id="bindingPhone">
         </div>
         <div class="binding-bottom">
             <button type="button" class="btn cancel">取消</button>
-            <button type="button" class="btn btn-default">确认</button>
+            <button type="button" class="btn btn-default" id="surePhone">确认</button>
         </div>
     </div>
 </div>
@@ -305,17 +305,18 @@
         </div>
         <div class="binding-main">
             <span>私人钱包地址：</span>
-            <input type="number">
+            <input type="number" id="walletAddress">
         </div>
         <div class="binding-bottom">
             <button type="button" class="btn cancel">取消</button>
-            <button type="button" class="btn btn-default">确认</button>
+            <button type="button" class="btn btn-default" id="sureAddress">确认</button>
         </div>
     </div>
 </div>
 <!--绑定手机和钱包地址 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/users.js"></script>
 </body>

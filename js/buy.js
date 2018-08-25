@@ -10,6 +10,10 @@ $(document).ready(function () {
             window.event.cancelBubble = true;
         }
     }
+    //实例化layui
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer,form = layui.form;
+    });
     //币种选择框收起
     $(document).click(function () {
         $('.iconTab').slideUp();
@@ -25,12 +29,42 @@ $(document).ready(function () {
     });
     //撤销框显示
     $('#buy-button').click(function () {
-        $('.dim').css('filter', 'blur(5px)');
-        $('.repeal').show()
+        let buyPrice = $('#buyPrice').val();
+        let buyNum = $('#buyNum').val();
+        let buyPwd = $('#buyPwd').val();
+        if(buyPrice === '') {
+            layer.msg('请输入买入单价');
+        }else {
+            if(buyNum === '') {
+                layer.msg('请输入买入数量');
+            }else {
+                if(buyPwd === '' || buyPwd.length < 6) {
+                    layer.msg('请输入正确的交易密码');
+                } else {
+                    $('.dim').css('filter', 'blur(5px)');
+                    $('.repeal').show()
+                }
+            }
+        }
     });
     $('#sale-button').click(function () {
-        $('.dim').css('filter', 'blur(5px)');
-        $('.repeal').show()
+        let dealPrice = $('#dealPrice').val();
+        let dealNum = $('#dealNum').val();
+        let dealPwd = $('#dealPwd').val();
+        if(dealPrice === '') {
+            layer.msg('请输入卖出单价');
+        }else {
+            if(dealNum === '') {
+                layer.msg('请输入卖出数量');
+            }else {
+                if(dealPwd === '' || dealPwd.length < 6) {
+                    layer.msg('请输入正确的交易密码');
+                } else {
+                    $('.dim').css('filter', 'blur(5px)');
+                    $('.repeal').show()
+                }
+            }
+        }
     });
     //撤销框隐藏
     $('.shut').click(function () {

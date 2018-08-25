@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    //实例化layui
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer,form = layui.form;
+    });
     //修改密码
     $('.pwd-left').click(function () {
         $('.pwd-left').addClass('pwd-button');
@@ -11,6 +15,48 @@ $(document).ready(function () {
         $('.pwd-right').addClass('pwd-button');
         $('.pwd-login').addClass('pwd-none');
         $('.pwd-deal').removeClass('pwd-none');
+    });
+    $('#loginPwd').click(function () {
+        let oldLoginPwd = $('#oldLoginPwd').val();
+        let newLoginPwd = $('#newLoginPwd').val();
+        let againNLP = $('#againNLP').val();
+        if(oldLoginPwd === '' || oldLoginPwd.length < 6) {
+            layer.msg('请正确填写原始登录密码');
+        }else {
+            if(newLoginPwd === '' || newLoginPwd.length < 6) {
+                layer.msg('请正确填写新登录密码');
+            }else {
+                if(againNLP !== newLoginPwd) {
+                    layer.msg('新登录密码两次输入不一致');
+                } else {
+                    layer.msg('修改成功');
+                    $('#oldLoginPwd').val('');
+                    $('#newLoginPwd').val('');
+                    $('#againNLP').val('');
+                }
+            }
+        }
+    });
+    $('#buyPwd').click(function () {
+        let oldBuyPwd = $('#oldBuyPwd').val();
+        let newBuyPwd = $('#newBuyPwd').val();
+        let againNBP = $('#againNBP').val();
+        if(oldBuyPwd === '' || oldBuyPwd.length < 6) {
+            layer.msg('请正确填写原始交易密码');
+        }else {
+            if(newBuyPwd === '' || newBuyPwd.length < 6) {
+                layer.msg('请正确填写新交易密码');
+            }else {
+                if(againNBP !== newBuyPwd) {
+                    layer.msg('新交易密码两次输入不一致');
+                } else {
+                    layer.msg('修改成功');
+                    $('#oldBuyPwd').val('');
+                    $('#newBuyPwd').val('');
+                    $('#againNBP').val('');
+                }
+            }
+        }
     });
     // 修改密码 end
     // 个人信息
@@ -25,22 +71,37 @@ $(document).ready(function () {
         $('#submit').show();
     });
     $('#submit').click(function () {
-        $('.nickname').show();
-        $('.nickname-input').hide();
-        $('.place').show();
-        $('.place-select').hide();
-        $('#submit').hide();
+        let nicknames = $('#nicknames').val();
+        if(nicknames === '' || nicknames.length < 2) {
+            layer.msg('请填写正确的昵称');
+        }else {
+            layer.msg('修改成功');
+            $('#nicknames').val('');
+            $('.nickname').show();
+            $('.nickname-input').hide();
+            $('.place').show();
+            $('.place-select').hide();
+            $('#submit').hide();
+        }
     });
-    //三级联动 选择城市
-    $("#city").citySelect({
-        prov: "河南",
-        city: "郑州",
-        dist: "null",
-        nodata: "none"
-    })
     // 个人信息 end
-    //实名认证
-    //实名认证 end
+    //充币
+    $('#recharge').click(function () {
+        let rechargeNum = $('#rechargeNum').val();
+        let rechargePwd = $('#rechargePwd').val();
+        if(rechargeNum === '') {
+            layer.msg('请填充值数量');
+        }else {
+            if(rechargePwd === '' || rechargePwd.length < 6) {
+                layer.msg('请正确输入交易密码');
+            }else {
+                layer.msg('充值成功');
+                $('#rechargeNum').val('');
+                $('#rechargePwd').val('');
+            }
+        }
+    });
+    //充币 end
     //提币
     $('#addIcon').click(function () {
         $('.fetch-dim').addClass('dim');
@@ -49,6 +110,38 @@ $(document).ready(function () {
     $('.shuts').click(function () {
         $('.fetch-dim').removeClass('dim');
         $('.fetchAddress').hide();
+    });
+    $('#fetch').click(function () {
+        let coinNum = $('#coinNum').val();
+        let coinPwd = $('#coinPwd').val();
+        if(coinNum === '') {
+            layer.msg('请填写提币数量');
+        }else {
+            if(coinPwd === '' || coinPwd.length < 6) {
+                layer.msg('请正确输入交易密码');
+            }else {
+                layer.msg('提币成功');
+                $('#coinNum').val('');
+                $('#coinPwd').val('');
+            }
+        }
+    });
+    $('#addAddress').click(function () {
+        let addressLabel = $('#addressLabel').val();
+        let fetchAddress = $('#fetchAddress').val();
+        if(addressLabel === '') {
+            layer.msg('请填写地址标签');
+        }else {
+            if(fetchAddress === '') {
+                layer.msg('请填写币提现地址');
+            }else {
+                layer.msg('新增成功');
+                $('#addressLabel').val('');
+                $('#fetchAddress').val('');
+                $('.fetch-dim').removeClass('dim');
+                $('.fetchAddress').hide();
+            }
+        }
     });
     //提币 end
     //用户中心
@@ -64,6 +157,28 @@ $(document).ready(function () {
         $('.user-dim').removeClass('dim');
         $('#phone').hide();
         $('#wallet').hide();
+    });
+    $('#surePhone').click(function () {
+        let bindingPhone = $('#bindingPhone').val();
+        if(bindingPhone === '' || bindingPhone.length < 11) {
+            layer.msg('请填写正确的手机号码');
+        }else {
+            layer.msg('绑定成功');
+            $('#bindingPhone').val('');
+            $('.user-dim').removeClass('dim');
+            $('#phone').hide();
+        }
+    });
+    $('#sureAddress').click(function () {
+        let walletAddress = $('#walletAddress').val();
+        if(walletAddress === '') {
+            layer.msg('请填写钱包地址');
+        }else {
+            layer.msg('绑定成功');
+            $('#walletAddress').val('');
+            $('.user-dim').removeClass('dim');
+            $('#wallet').hide();
+        }
     });
     // 用户中心 end
     // 邀请好友

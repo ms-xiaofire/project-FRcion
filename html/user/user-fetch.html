@@ -157,7 +157,7 @@
                     <div class="iconCount">
                         <div>
                             <p>数额：</p>
-                            <input type="number" placeholder="请输入提币数额">
+                            <input type="number" placeholder="请输入提币数额" id="coinNum">
                             <p class="gray">（可用<span>66，1285</span>EHT）</p>
                         </div>
                         <div>
@@ -167,10 +167,10 @@
                         </div>
                         <div>
                             <p>交易密码：</p>
-                            <input type="password" placeholder="请输入交易密码">
+                            <input type="password" placeholder="请输入交易密码" id="coinPwd">
                         </div>
                         <div class="identity">
-                            <button type="button" class="sure-button sure-left">确认提现</button>
+                            <button type="button" class="sure-button sure-left" id="fetch">确认提现</button>
                         </div>
                     </div>
                     <div class="user-title">
@@ -350,21 +350,22 @@
         </div>
         <div class="address-main">
             <span>地址标签：</span>
-            <input type="text">
+            <input type="text" id="addressLabel">
         </div>
         <div class="address-main">
-            <span>地址标签：</span>
-            <input type="text">
+            <span>地址：</span>
+            <input type="text" id="fetchAddress">
         </div>
         <div class="address-bottom">
             <button type="button" class="btn shuts">取消</button>
-            <button type="button" class="btn btn-default">确认</button>
+            <button type="button" class="btn btn-default" id="addAddress">确认</button>
         </div>
     </div>
 </div>
 <!--新增币提现地址 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/users.js"></script>
 </body>

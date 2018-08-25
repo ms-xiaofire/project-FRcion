@@ -282,7 +282,10 @@
     padding: 20px 0 0 20px;
 }
 .address-main span {
+    min-width: 60px;
     font-size: 12px;
+    display: inline-block;
+    text-align: right;
 }
 .address-main input {
     color: #000;

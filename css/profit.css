@@ -88,7 +88,8 @@
     color: #013567;
 }
 .vip div input {
-    padding: 0 10px;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
     margin: 0 10px;
 }
 .vip div button {

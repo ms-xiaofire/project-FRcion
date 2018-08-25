@@ -121,37 +121,39 @@
                 </div>
             </div>
             <div>
-                <div class="warning">
-                    <p><img src="../../images/warning.png">为了确保您的资金安全，请实名认证。</p>
-                </div>
-                <div class="password">
-                    <span>昵称</span>
-                    <input>
-                </div>
-                <div class="password">
-                    <span>真实姓名</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>证件类型</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>证件号码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>手机号码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>验证码</span>
-                    <span class="verify">
-                        <input type="text">
+                <form>
+                    <div class="warning">
+                        <p><img src="../../images/warning.png">为了确保您的资金安全，请实名认证。</p>
+                    </div>
+                    <div class="password">
+                        <span>昵称</span>
+                        <input type="text" id="nickname">
+                    </div>
+                    <div class="password">
+                        <span>真实姓名</span>
+                        <input type="text" id="realName">
+                    </div>
+                    <div class="password">
+                        <span>证件类型</span>
+                        <input type="text" id="cardType" value="身份证">
+                    </div>
+                    <div class="password">
+                        <span>证件号码</span>
+                        <input type="text" id="cardNum">
+                    </div>
+                    <div class="password">
+                        <span>手机号码</span>
+                        <input type="number" id="phoneNum">
+                    </div>
+                    <div class="password">
+                        <span>验证码</span>
+                        <span class="verify">
+                        <input type="text" id="verification">
                         <img alt="验证码">
                     </span>
-                </div>
-                <a href="register4.html" class="btn submit">下一步</a>
+                    </div>
+                    <button type="button" class="btn submit" id="next3">下一步</button>
+                </form>
             </div>
         </div>
     </div>
@@ -247,6 +249,7 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/register.js"></script>
 </body>

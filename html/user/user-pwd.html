@@ -129,32 +129,32 @@
                 <div class="changePwd pwd-login">
                     <div>
                         <span>原始登录密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="oldLoginPwd">
                     </div>
                     <div>
                         <span>新登录密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="newLoginPwd">
                     </div>
                     <div>
                         <span>确认新登录密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="againNLP">
                     </div>
-                    <button type="button" class="sure-button sure-left">确认提交</button>
+                    <button type="button" class="sure-button sure-left" id="loginPwd">确认提交</button>
                 </div>
                 <div class="changePwd pwd-deal pwd-none">
                     <div>
                         <span>原始交易密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="oldBuyPwd">
                     </div>
                     <div>
                         <span>新交易密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="newBuyPwd">
                     </div>
                     <div>
                         <span>确认新交易密码：</span>
-                        <input type="text" class="input">
+                        <input type="password" class="input" id="againNBP">
                     </div>
-                    <button type="button" class="sure-button sure-left">确认提交</button>
+                    <button type="button" class="sure-button sure-left" id="buyPwd">确认提交</button>
                 </div>
             </div>
             <!--委托管理 end-->
@@ -258,6 +258,7 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/users.js"></script>
 </body>

@@ -364,10 +364,6 @@ input[type="number"]{
     text-align: center;
     margin: 0 3%;
 }
-.footer div img {
-    width: 60px;
-    height: 60px;
-}
 .qq:hover {
     margin-top: -104px;
 }
@@ -524,13 +520,13 @@ input[type="number"]{
         transform: scale(1.1)!important;
     }
     .qq:hover {
-        margin-top: -60px;
+        margin-top: -59px;
     }
     .wechat:hover {
-        margin-top: -60px;
+        margin-top: -59px;
     }
     .microblog:hover {
-        margin-top: -60px;
+        margin-top: -59px;
     }
     /*底部 end*/
 }

@@ -121,105 +121,33 @@
                 </div>
             </div>
             <div class="set">
-                <div class="password">
-                    <span>手机号</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>登录密码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>确认登录密码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>邀请码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span></span>
+                <form>
+                    <div class="password">
+                        <span>手机号</span>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="password">
+                        <span>登录密码</span>
+                        <input type="password" id="pwd">
+                    </div>
+                    <div class="password">
+                        <span>确认登录密码</span>
+                        <input type="password" id="againPwd">
+                    </div>
+                    <div class="password">
+                        <span>邀请码</span>
+                        <input type="text" id="invite">
+                    </div>
+                    <div class="password">
+                        <span></span>
                         <span class="gray">
-                            <input type="checkbox">
+                            <input type="checkbox" id="agree">
                             我同意Free Realms<a href="protocol.html" class="white">《服务协议》</a>
                     </span>
-                </div>
-                <a href="register2.html" class="btn submit">下一步</a>
+                    </div>
+                    <button type="button" class="btn submit" id="next1">下一步</button>
+                </form>
             </div>
-            <!--<div>-->
-                <!--<div class="warning">-->
-                    <!--<p><img src="../../images/warning.png">为保障您的资金安全，请设置交易密码。</p>-->
-                    <!--<p>对账户资产进行投资、交易、转出时，需用到交易密码，请务必牢记。</p>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>交易密码</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>确认交易密码</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<a href="#" type="button" id="submit2" class="btn submit">下一步</a>-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<div class="warning">-->
-                    <!--<p><img src="../../images/warning.png">为了确保您的资金安全，请实名认证。</p>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>昵称</span>-->
-                    <!--<input>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>真实姓名</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>证件类型</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>证件号码</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>手机号码</span>-->
-                    <!--<input type="text">-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>验证码</span>-->
-                    <!--<span class="verify">-->
-                        <!--<input type="text">-->
-                        <!--<img alt="验证码">-->
-                    <!--</span>-->
-                <!--</div>-->
-                <!--<a href="#" type="button" id="submit3" class="btn submit">下一步</a>-->
-            <!--</div>-->
-            <!--<div>-->
-                <!--<div class="warning">-->
-                    <!--<p>注册成功</p>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>昵称</span>-->
-                    <!--<span class="message">artMan</span>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>真实姓名</span>-->
-                    <!--<span class="message">奥特曼</span>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>证件类型</span>-->
-                    <!--<span class="message">身份证</span>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>证件号码</span>-->
-                    <!--<span class="message">410112199001010011</span>-->
-                <!--</div>-->
-                <!--<div class="password">-->
-                    <!--<span>手机号码</span>-->
-                    <!--<span class="message">15888888888</span>-->
-                <!--</div>-->
-                <!--<a href="../login.html" type="button" id="submit4" class="btn submit">立即登录</a>-->
-            <!--</div>-->
         </div>
     </div>
 </main>
@@ -314,6 +242,7 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/register.js"></script>
 </body>

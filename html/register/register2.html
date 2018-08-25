@@ -121,19 +121,21 @@
                 </div>
             </div>
             <div>
-                <div class="warning">
-                    <p><img src="../../images/warning.png">为保障您的资金安全，请设置交易密码。</p>
-                    <p>对账户资产进行投资、交易、转出时，需用到交易密码，请务必牢记。</p>
-                </div>
-                <div class="password">
-                    <span>交易密码</span>
-                    <input type="text">
-                </div>
-                <div class="password">
-                    <span>确认交易密码</span>
-                    <input type="text">
-                </div>
-                <a href="register3.html" class="btn submit">下一步</a>
+                <form>
+                    <div class="warning">
+                        <p><img src="../../images/warning.png">为保障您的资金安全，请设置交易密码。</p>
+                        <p>对账户资产进行投资、交易、转出时，需用到交易密码，请务必牢记。</p>
+                    </div>
+                    <div class="password">
+                        <span>交易密码</span>
+                        <input type="password" id="buyPwd">
+                    </div>
+                    <div class="password">
+                        <span>确认交易密码</span>
+                        <input type="password" id="againBuyPwd">
+                    </div>
+                    <button type="button" class="btn submit" id="next2">下一步</button>
+                </form>
             </div>
         </div>
     </div>
@@ -229,6 +231,7 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/register.js"></script>
 </body>

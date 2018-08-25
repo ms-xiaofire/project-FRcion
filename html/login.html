@@ -103,13 +103,15 @@
     <div class="main-box">
         <p class="main-head">登录</p>
         <div class="main-body">
-            <input type="number" placeholder="手机号" class="user">
-            <input type="password" placeholder="请输入密码" class="user">
-            <a href="home.html" type="button" class="btn submit">确定</a>
-            <div class="login-bottom">
-                <a href="password.html">忘记密码</a>
-                <a href="register/register1.html">注册</a>
-            </div>
+            <form>
+                <input type="number" placeholder="手机号" class="user" id="phone">
+                <input type="password" placeholder="请输入密码" class="user" id="pwd">
+                <button type="button" class="btn submit" id="login">确定</button>
+                <div class="login-bottom">
+                    <a href="password.html">忘记密码</a>
+                    <a href="register/register1.html">注册</a>
+                </div>
+            </form>
         </div>
     </div>
 </main>
@@ -204,6 +206,8 @@
 <!--尾部 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../component/modules.js"></script>
+<script src="../js/login.js"></script>
 </body>
 </html>
