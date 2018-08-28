@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    //实例化layui
+    layui.use(['layer', 'form'], function(){
+        var layer = layui.layer,form = layui.form;
+    });
+
     //距离某日的倒计时
     // var endTime=new Date('2018-09-01');
 
@@ -7,7 +12,6 @@ $(document).ready(function () {
     var endMonth=new Date().getMonth()+1;
     var endDay=new Date().getDate();
     var endTime2=new Date(endYear,endMonth,endDay);
-
 
     var leftDiv=function(){
         var leftTime=endTime2-(new Date().getTime());
@@ -22,7 +26,6 @@ $(document).ready(function () {
         }else{
             clearTimeout(leftDiv())
         }
-
     }
     leftDiv();
 
@@ -31,4 +34,33 @@ $(document).ready(function () {
         return num;
     }
 
+    //参加超级分红弹窗
+    $('#join').click(function () {
+        $('#profit-dim').addClass('dim');
+        $('.superProfit').show();
+    });
+    $('.cancel').click(function () {
+        $('#profit-dim').removeClass('dim');
+        $('.superProfit').hide();
+    });
+    $('#participate').click(function () {
+        let dealPwd = $('#dealPwd').val();
+        if(dealPwd === '' || dealPwd.length < 6) {
+            layer.msg('请输入正确的密码')
+        }else {
+            console.log('参加超级分红');
+            $('#dealPwd').val('');
+            $('#profit-dim').removeClass('dim');
+            $('.superProfit').hide();
+        }
+    });
+    //超级分红介绍弹窗
+    $('#profitIntro').click(function () {
+        $('#profit-dim').addClass('dim');
+        $('.profit-intro').show();
+    });
+    $('.intro-btn').click(function () {
+        $('#profit-dim').removeClass('dim');
+        $('.profit-intro').hide();
+    });
 });

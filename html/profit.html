@@ -4,328 +4,409 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <title>超级分红</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../component/GB-canvas-turntable/GB-canvas-turntable.css">
     <link rel="stylesheet" href="../component/modules.css">
     <link rel="stylesheet" href="../css/profit.css">
 </head>
 <body>
-<!--头部-->
-<header class="header">
-    <div class="header-left">
-        <span>欢迎来到FRcion</span>
-    </div>
-    <div class="header-right">
-        <div class="header-none">
-            <a href="home.html">
-                <img src="../images/keys-1.png">
-            </a>
-            <span class="language header-none" id="move-language">
+<div id="profit-dim">
+    <!--头部-->
+    <header class="header">
+        <div class="header-left">
+            <span>欢迎来到FRcion</span>
+        </div>
+        <div class="header-right">
+            <div class="header-none">
+                <a href="home.html">
+                    <img src="../images/keys-1.png">
+                </a>
+                <span class="language header-none" id="move-language">
                 <span>中文</span>
             </span>
-        </div>
-        <div class="header-nav">
-            <div class="header-show">
-                <a href="./login.html">登录</a>
-                <span>丨</span>
-                <a href="register/register1.html">注册</a>
             </div>
-            <div class="header-none">
-                <a href="#">用户名</a>
-                <span>丨</span>
-                <a href="#" class="red">退出</a>
-            </div>
-            <div>
-                <nav class="navbar navbar-default header-none" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                    data-target="#example-navbar-collapse">
-                                <img src="../images/menu.png">
-                            </button>
+            <div class="header-nav">
+                <div class="header-show">
+                    <a href="./login.html">登录</a>
+                    <span>丨</span>
+                    <a href="register/register1.html">注册</a>
+                </div>
+                <div class="header-none">
+                    <a href="#">用户名</a>
+                    <span>丨</span>
+                    <a href="#" class="red">退出</a>
+                </div>
+                <div>
+                    <nav class="navbar navbar-default header-none" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#example-navbar-collapse">
+                                    <img src="../images/menu.png">
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="home.html">首页</a></li>
+                                    <li><a href="buy/buy.html">交易中心</a></li>
+                                    <li><a href="profit.html">超级分红</a></li>
+                                    <li><a href="user/user-property.html">用户中心</a></li>
+                                    <li><a href="help/help-register.html">帮助中心</a></li>
+                                    <li><a href="news/news.html">最新动态</a></li>
+                                    <li><a href="market.html">行情中心</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                            <ul class="nav navbar-nav">
-                                <li><a href="home.html">首页</a></li>
-                                <li><a href="buy/buy.html">交易中心</a></li>
-                                <li><a href="profit.html">超级分红</a></li>
-                                <li><a href="user/user-property.html">用户中心</a></li>
-                                <li><a href="help/help-register.html">帮助中心</a></li>
-                                <li><a href="news/news.html">最新动态</a></li>
-                                <li><a href="market.html">行情中心</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-</header>
-<!--头部 end-->
+    </header>
+    <!--头部 end-->
 
-<!--导航栏-->
-<nav class="navbar navbar-default header-shadow" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#example-navbar-collapse">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <a href="home.html" class="nav-logo">
-                <img src="../images/keys-1.png">
-            </a>
-            <ul class="nav navbar-nav">
-                <li><a href="home.html">首页</a></li>
-                <li><a href="buy/buy.html">交易中心</a></li>
-                <li><a href="profit.html" id="nav-light">超级分红</a></li>
-                <li><a href="user/user-property.html">用户中心</a></li>
-                <li><a href="help/help-register.html">帮助中心</a></li>
-                <li><a href="news/news.html">最新动态</a></li>
-                <li><a href="market.html">行情中心</a></li>
-                <span class="language" id="pc-language">
+    <!--导航栏-->
+    <nav class="navbar navbar-default header-shadow" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#example-navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                <a href="home.html" class="nav-logo">
+                    <img src="../images/keys-1.png">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">首页</a></li>
+                    <li><a href="buy/buy.html">交易中心</a></li>
+                    <li><a href="profit.html" id="nav-light">超级分红</a></li>
+                    <li><a href="user/user-property.html">用户中心</a></li>
+                    <li><a href="help/help-register.html">帮助中心</a></li>
+                    <li><a href="news/news.html">最新动态</a></li>
+                    <li><a href="market.html">行情中心</a></li>
+                    <span class="language" id="pc-language">
                     <span>中文</span>
                 </span>
-            </ul>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<ul class="tab-language">
-    <li>English</li>
-    <li>中文</li>
-</ul>
-<!--导航栏 end-->
+    </nav>
+    <ul class="tab-language">
+        <li>English</li>
+        <li>中文</li>
+    </ul>
+    <!--导航栏 end-->
 
-<!--内容-->
-<main class="main">
-    <div class="main-box">
-        <div class="main-up">
-            <div class="myBonus">
-                <p>我的奖池：<span>8862.3321</span></p>
-                <p>我的分红：<span>8862.3321</span></p>
-                <p>我的锁定：<span>8862.3321</span></p>
-            </div>
-            <div class="timeDown">
-                <div id="divTime">
-                    <!--倒计时：<span>18小时54分36秒</span>-->
+    <!--内容-->
+    <main class="main">
+        <div class="main-box">
+            <div class="main-up">
+                <div class="myBonus">
+                    <p>我的奖池：<span>8862.3321</span></p>
+                    <p>我的分红：<span>8862.3321</span></p>
+                    <p>我的锁定：<span>8862.3321</span></p>
                 </div>
-                <button type="button">超级分红介绍</button>
-            </div>
-            <div class="jackpot">
-                <p>奖池：<span>9563，2244</span></p>
-            </div>
-            <div class="states">
-                <div>
-                    <img src="../images/lock.png">
-                    <p>锁定：<span>8862.3321</span></p>
+                <div class="timeDown">
+                    <div id="divTime"></div>
+                    <button type="button" id="profitIntro">超级分红介绍</button>
                 </div>
-                <div>
-                    <img src="../images/ball.png">
-                    <p>锁定：<span>8862.3321</span></p>
+                <div class="jackpot">
+                    <p>奖池：<span>9563，2244</span></p>
                 </div>
-                <div>
-                    <img src="../images/shield.png">
-                    <p>锁定：<span>8862.3321</span></p>
+                <div class="states">
+                    <div>
+                        <img src="../images/lock.png">
+                        <p>锁定：<span>8862.3321</span></p>
+                    </div>
+                    <div>
+                        <img src="../images/ball.png">
+                        <p>锁定：<span>8862.3321</span></p>
+                    </div>
+                    <div>
+                        <img src="../images/shield.png">
+                        <p>锁定：<span>8862.3321</span></p>
+                    </div>
+                </div>
+                <div class="join">
+                    <button type="button" id="join">参与超级分红</button>
+                </div>
+                <div class="joinList">
+                    <p class="listTitle">参与超级分红列表</p>
+                    <p>张三<span>一分钟前参与了超级分红</span></p>
+                    <p>张三<span>一分钟前参与了超级分红</span></p>
+                    <p>张三<span>一分钟前参与了超级分红</span></p>
+                </div>
+                <div class="dish">
+                    <div class="dish-title">
+                        <p>幸运转盘大抽奖</p>
+                        <span>好礼不停，速来参与</span>
+                    </div>
+                    <div class="dish-main">
+                        <div class="dish-left">
+                            <div class="wrapper typo" id="wrapper">
+                                <section id="turntable" class="gb-turntable">
+                                    <div class="gb-turntable-container">
+                                        <canvas class="gb-turntable-canvas" width="300" height="300px">抱歉！浏览器不支持。</canvas>
+                                    </div>
+                                    <a class="gb-turntable-btn" href="javascript:;">抽奖</a>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="dish-right">
+                            <p class="rule">抽奖规则</p>
+                            <p>1.每周日晚上八点进行第一次抽奖</p>
+                            <p>2.半点半进行第二次抽奖</p>
+                            <p>3.每人两次抽奖机会</p>
+                            <p>4.参与转盘抽奖需支付100个KEYS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="vip">
+                    <label>会员信息</label>
+                    <div>
+                        <input type="text" placeholder="日期">
+                        <input type="text" placeholder="ID或手机号">
+                        <button type="button" class="btn">查询</button>
+                    </div>
                 </div>
             </div>
-            <div class="join">
-                <button type="button">参与超级分红</button>
+            <div class="main-down">
+                <form class="forms">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>昵称</th>
+                            <th>手机号</th>
+                            <th>时间</th>
+                            <th>锁定量</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">5，2318</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">4598</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">2，3549</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">4596</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">1，7862</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">4893</td>
+                        </tr>
+                        </tbody>
+                        <tbody>
+                        <tr>
+                            <td>123456</td>
+                            <td>昵称名称</td>
+                            <td>13300000001</td>
+                            <td><span>2018-07-12</span><span>15:23:45</span></td>
+                            <td class="iconNum">562</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
             </div>
-            <div class="joinList">
-                <p class="listTitle">参与超级分红列表</p>
-                <p>张三<span>一分钟前参与了超级分红</span></p>
-                <p>张三<span>一分钟前参与了超级分红</span></p>
-                <p>张三<span>一分钟前参与了超级分红</span></p>
-            </div>
-            <div class="vip">
-                <label>会员信息</label>
-                <div>
-                    <input type="text" placeholder="日期">
-                    <input type="text" placeholder="ID或手机号">
-                    <button type="button" class="btn">查询</button>
+            <div class="main-bottom">
+                <div class="warning">
+                    <p> 风险提示：</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
                 </div>
             </div>
         </div>
-        <div class="main-down">
-            <form class="forms">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>昵称</th>
-                        <th>手机号</th>
-                        <th>时间</th>
-                        <th>锁定量</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">5，2318</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">4598</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">2，3549</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">4596</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">1，7862</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">4893</td>
-                    </tr>
-                    </tbody>
-                    <tbody>
-                    <tr>
-                        <td>123456</td>
-                        <td>昵称名称</td>
-                        <td>13300000001</td>
-                        <td><span>2018-07-12</span><span>15:23:45</span></td>
-                        <td class="iconNum">562</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </form>
-        </div>
-        <div class="main-bottom">
-            <div class="warning">
-                <p> 风险提示：</p>
-                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;数字货币交易具有极高的风险（预挖、暴涨暴跌、庄家操控、团队及技术缺陷等），据国家五部委《关于防范比特比风险通知》，币时代仅为数字货币的爱好者提供一个自由的网上交易平台，对币的投资价值不承担任何审查、担保、赔偿的责任，如果您不能接受，请不要进行交易，谢谢！</p>
-            </div>
-        </div>
-    </div>
-</main>
-<!--内容 end-->
+    </main>
+    <!--内容 end-->
 
-<!--在线客服浮动窗口-->
-<div class="service_windows" id="service">
-    <div class="service_title">
-        <div class="service_left">
-            <img src="../images/service-icon.png">
-            <span>在线客服</span>
+    <!--在线客服浮动窗口-->
+    <div class="service_windows" id="service">
+        <div class="service_title">
+            <div class="service_left">
+                <img src="../images/service-icon.png">
+                <span>在线客服</span>
+            </div>
+            <img src="../images/close.png" class="close" id="close">
         </div>
-        <img src="../images/close.png" class="close" id="close">
+        <div class="service_body">
+            <div class="service_view">
+                <img src="../images/service.png">
+                <div class="view_right">
+                    <div class="view_main">
+                        <div class="trigon-left"></div>
+                        <div class="view_box">
+                            <div class="view">
+                                <p>您好!</p>
+                            </div>
+                            <p class="time">14:25:38</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service_view">
+                <img src="../images/service.png">
+                <div class="view_right">
+                    <div class="view_main">
+                        <div class="trigon-left"></div>
+                        <div class="view_box">
+                            <div class="view">
+                                <p>您好!</p>
+                            </div>
+                            <p class="time">14:25:38</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service_view">
+                <div class="view_left">
+                    <div class="view_main flex-end">
+                        <div class="view_box">
+                            <div class="view">
+                                <p>您好!</p>
+                            </div>
+                            <p class="time">14:25:38</p>
+                        </div>
+                        <div class="trigon-right"></div>
+                    </div>
+                </div>
+                <img src="../images/service.png">
+            </div>
+        </div>
+        <textarea class="user_input"></textarea>
+        <div class="service_bottom">
+            <button type="button" class="btn" id="closes">关闭</button>
+            <button type="button" class="btn sent">发送</button>
+        </div>
     </div>
-    <div class="service_body">
-        <div class="service_view">
-            <img src="../images/service.png">
-            <div class="view_right">
-                <div class="view_main">
-                    <div class="trigon-left"></div>
-                    <div class="view_box">
-                        <div class="view">
-                            <p>您好!</p>
-                        </div>
-                        <p class="time">14:25:38</p>
-                    </div>
-                </div>
-            </div>
+    <!--在线客服浮动窗口 end-->
+
+    <!--尾部-->
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="../images/logo-1.png">
         </div>
-        <div class="service_view">
-            <img src="../images/service.png">
-            <div class="view_right">
-                <div class="view_main">
-                    <div class="trigon-left"></div>
-                    <div class="view_box">
-                        <div class="view">
-                            <p>您好!</p>
-                        </div>
-                        <p class="time">14:25:38</p>
-                    </div>
-                </div>
-            </div>
+        <div class="online" id="online">
+            <img src="../images/online.png">
+            <p>在线客服</p>
         </div>
-        <div class="service_view">
-            <div class="view_left">
-                <div class="view_main flex-end">
-                    <div class="view_box">
-                        <div class="view">
-                            <p>您好!</p>
-                        </div>
-                        <p class="time">14:25:38</p>
-                    </div>
-                    <div class="trigon-right"></div>
-                </div>
-            </div>
-            <img src="../images/service.png">
+        <div class="qq">
+            <img src="../images/code.png" class="code">
+            <img src="../images/QQ.png">
+            <p>QQ</p>
         </div>
-    </div>
-    <textarea class="user_input"></textarea>
-    <div class="service_bottom">
-        <button type="button" class="btn" id="closes">关闭</button>
-        <button type="button" class="btn sent">发送</button>
+        <div class="wechat">
+            <img src="../images/code.png" class="code">
+            <img src="../images/wechat.png">
+            <p>微信</p>
+        </div>
+        <div class="microblog">
+            <img src="../images/code.png" class="code">
+            <img src="../images/microblog.png">
+            <p>微博</p>
+        </div>
+    </footer>
+    <!--尾部 end-->
+</div>
+<!--参与超级分红-->
+<div class="superProfit">
+    <div class="superProfit-box">
+        <div class="superProfit-title">
+            <span>抽奖条件</span>
+            <img src="../images/close.png" class="cancel">
+        </div>
+        <div class="superProfit-main">
+            <p>当前余额：500.00KEYS</p>
+            <p>本次抽奖需支付100KEYS</p>
+            <input type="password" placeholder="请输入交易密码" id="dealPwd">
+            <a href="password.html">忘记密码</a>
+        </div>
+        <div class="superProfit-bottom">
+            <button type="button" class="btn cancel">取消</button>
+            <button type="button" class="btn btn-default" id="participate">确认</button>
+        </div>
     </div>
 </div>
-<!--在线客服浮动窗口 end-->
-
-<!--尾部-->
-<footer class="footer">
-    <div class="footer-left">
-        <img src="../images/logo-1.png">
+<!--参与超级分红 end-->
+<!--超级分红介绍-->
+<div class="profit-intro">
+    <div class="intro-box">
+        <div class="intro-title">
+            <p>超级分红介绍</p>
+        </div>
+        <div class="intro-main">
+            <p>与大多数货币不同，比特比不依靠特定货币机构发行，它依据特定算法，通过大量的计算产生，比特比经济使用整个P2P网络中众多节点构成的分布式数据库来确认并记录所有的交易行为，并使用密码学的设计来确保货币流通各个环节安全性。P2P的去中心化特性与算法本身可以确保无法通过大量制造比特比来人为操控货币。基于密码学的设计可以使比特比只能被真实的拥有者转移或支付。这同样确保了货币所有权与流通交易的匿名性。比特比与其他虚拟货币最大的不同，是其总数量非常有限，具有极强的稀缺性。该货币系统曾在4年内只有不超过1050万个，之后的总数量将被永久限制在2100万个。</p>
+            <button type="button" class="intro-btn">确定</button>
+        </div>
     </div>
-    <div class="online" id="online">
-        <img src="../images/online.png">
-        <p>在线客服</p>
-    </div>
-    <div class="qq">
-        <img src="../images/code.png" class="code">
-        <img src="../images/QQ.png">
-        <p>QQ</p>
-    </div>
-    <div class="wechat">
-        <img src="../images/code.png" class="code">
-        <img src="../images/wechat.png">
-        <p>微信</p>
-    </div>
-    <div class="microblog">
-        <img src="../images/code.png" class="code">
-        <img src="../images/microblog.png">
-        <p>微博</p>
-    </div>
-</footer>
-<!--尾部 end-->
+</div>
+<!--超级分红介绍 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="../component/layui-v2.3.0/layui/layui.js"></script>
+<script src="../component/GB-canvas-turntable/GB-canvas-turntable.js"></script>
 <script src="../component/modules.js"></script>
 <script src="../js/profit.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        gbTurntable.init({
+            id: 'turntable',
+            config: function(callback){
+                // 获取奖品信息
+                callback && callback(['1元红包','2元红包','3元红包','4元红包','5元红包','6元红包','7元红包','8元红包']);
+            },
+            getPrize: function(callback) {
+                // 获取中奖信息
+                var num = Math.random() * 8 >>> 0,   //奖品ID
+                    chances = num;  // 可抽奖次数
+                callback && callback([num, chances]);
+            },
+            gotBack: function(data) {
+                alert('恭喜抽中' + data);
+            }
+        });
+    }, false);
+</script>
 </body>
 </html>
