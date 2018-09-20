@@ -5,6 +5,7 @@
     <title>交易中心</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../component/kline-master/js/kline.css">
     <link rel="stylesheet" href="../../component/modules.css">
     <link rel="stylesheet" href="../../css/buy.css">
 </head>
@@ -147,7 +148,9 @@
                     </div>
                 <div class="buy-body">
                     <div class="buy-left">
-                        <div class="chart"></div>
+                        <div class="chart" id="chart">
+                            <div id="kline_container"></div>
+                        </div>
                         <div class="myIcon">
                             <div>
                                 <p>我的ETH币</p>
@@ -159,7 +162,7 @@
                             </div>
                             <div>
                                 <p>可用：<span class="green">8056</span></p>
-                                <p>可用：<span class="green">4，6653</span></p>
+                                <p>可用：<span class="green" id="usable">6653</span></p>
                             </div>
                             <div>
                                 <p>冻结：<span class="orange">7986</span></p>
@@ -180,7 +183,7 @@
                                     </div>
                                     <div class="buy-options">
                                         <label>最大可买：</label>
-                                        <span>500，2145</span>
+                                        <span id="buyPriceNum"></span>
                                     </div>
                                     <div class="buy-options">
                                         <label>买入数量：</label>
@@ -221,7 +224,7 @@
                                     </div>
                                     <div class="buy-options">
                                         <label>最大可卖：</label>
-                                        <span>500，2145</span>
+                                        <span id="dealPriceNum"></span>
                                     </div>
                                     <div class="buy-options">
                                         <label>卖出数量：</label>
@@ -410,12 +413,12 @@
                             <div>
                                 <label class="blue">我的委托</label>
                                 <span class="float-right">
-                                <select>
-                                <option>全部</option>
-                                <option>买</option>
-                                <option>卖</option>
-                            </select>
-                            <button type="button" class="btn">查询</button>
+                                <select id="myEntrust">
+                                    <option value="0">全部</option>
+                                    <option value="2">买</option>
+                                    <option value="1">卖</option>
+                                </select>
+                                <button type="button" class="btn" id="selectDeal">查询</button>
                             </span>
                             </div>
                             <form class="gray table-responsive">
@@ -582,6 +585,8 @@
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../component/layui-v2.3.0/layui/layui.js"></script>
+<script src="../../component/kline-master/lib/jquery.mousewheel.js"></script>
+<script src="../../component/kline-master/js/kline.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/buy.js"></script>
 </body>

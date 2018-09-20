@@ -83,12 +83,24 @@
     color: #013567;
     margin-bottom: 30px;
     display: flex;
+    justify-content: space-between;
 }
 .myKEY p {
     margin: 0 20px 0;
+    display: inline-block;
 }
 .myKEY p span {
     margin-right: 5px;
+}
+.myKEY button {
+    width: 90px;
+    color: #fff;
+    padding: 2px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #013567;
+    margin-right: 20px;
+    outline: none;
 }
 .logo {
     width: 20px;
@@ -251,6 +263,17 @@
 .iconExplain {
     margin-bottom: 30px;
 }
+.removeAddress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+}
+.removeHint {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0;
+}
 .fetchAddress {
     position: fixed;
     top: 50%;
@@ -300,6 +323,7 @@
 .address-bottom button {
     height: 22px;
     padding: 0 15px;
+    color: #000;
 }
 /*提币 end*/
 /*用户中心*/
@@ -494,9 +518,6 @@
     }
     .user-menu a {
         width: 100px;
-    }
-    .myKEY {
-        display: block;
     }
     .password, .changePwd {
         text-align: center;

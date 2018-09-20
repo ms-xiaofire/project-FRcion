@@ -260,7 +260,8 @@ input[type="number"]{
 .view_right {
     margin-left: 15px;
     text-align: left;
-    width: -webkit-fill-available;
+    width: 100%;
+    /*width: -webkit-fill-available;*/
 }
 .view_main {
     display: flex;
@@ -288,7 +289,8 @@ input[type="number"]{
 .view_left {
     margin-right: 15px;
     text-align: left;
-    width: -webkit-fill-available;
+    width: 100%;
+    /*width: -webkit-fill-available;*/
 }
 .flex-end {
     justify-content: flex-end;

@@ -140,20 +140,26 @@
     align-items: center;
     justify-content: space-between;
 }
-.timeDown div {
-    color: #013567;
-    font-size: 22px;
-}
-.timeDown button {
-    color: #fff;
-    background-color: #013567;
-    border: none;
-    padding: 0 20px;
-    border-radius: 3px;
-}
 .jackpot {
     color: #013567;
+}
+.jackpot div {
+    font-size: 22px;
+}
+.jackpot p {
     font-size: 18px;
+}
+.timeDown_right p {
+    color: #013567;
+}
+.timeDown_right button {
+    width: 150px;
+    color: #fff;
+    margin: 10px auto;
+    background-color: #013567;
+    border: none;
+    border-radius: 3px;
+    display: block;
 }
 .states {
     display: flex;
@@ -185,6 +191,8 @@
     color: #013567;
     font-size: 12px;
     margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
 }
 .listTitle {
     font-size: 16px;

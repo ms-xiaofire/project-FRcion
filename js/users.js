@@ -131,6 +131,19 @@ $(document).ready(function () {
     });
     //充币 end
     //提币
+    $('#removeAddress').click(function () {
+        $('.fetch-dim').addClass('dim');
+        $('.removeAddress').show();
+    });
+    $('.removeClose').click(function () {
+        $('.fetch-dim').removeClass('dim');
+        $('.removeAddress').hide();
+    });
+    $('#removeSure').click(function () {
+        layer.msg('删除成功');
+        $('.fetch-dim').removeClass('dim');
+        $('.removeAddress').hide();
+    });
     $('#addIcon').click(function () {
         $('.fetch-dim').addClass('dim');
         $('.fetchAddress').show();
@@ -210,6 +223,12 @@ $(document).ready(function () {
     });
     // 用户中心 end
     // 邀请好友
+    $('.invite-button').click(function () {
+        var link = $('#link');
+        link.select();
+        document.execCommand("copy");
+        layer.msg('复制成功')
+    });
     $('.invite').click(function () {
         $('.poster-dim').addClass('dim');
         $('.poster').show();

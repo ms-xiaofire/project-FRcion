@@ -25,3 +25,8 @@ $('#password').on('click', function(){
         }
     }
 });
+$('#verifyCode').click(function () {
+    let test = 'bbbb';
+    $('#verifyCode').val(test);
+    console.log($('#verifyCode').val());
+});

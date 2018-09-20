@@ -5,7 +5,7 @@
     background-size: cover;
 }
 .main-box {
-    width: 80%;
+    width: 1200px;
     background-color: #fff;
     margin: 0 auto;
     overflow: hidden;
@@ -74,8 +74,7 @@
 }
 .chart {
     width: 100%;
-    height: 300px;
-    background-color: #ccc;
+    height: 402px;
     border: 1px solid #8e8e8e;
 }
 .myIcon {
@@ -170,6 +169,27 @@
     background-color: #9aadbe;
     margin-left: 15px;
 }
+.newBuy {
+    margin: 20px 0;
+}
+.myEntrust form, .newBuy form {
+    height: 200px;
+}
+/*滚动条样式*/
+.table-responsive::-webkit-scrollbar {/*滚动条整体样式*/
+    width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+    height: 4px;
+}
+.table-responsive::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.2);
+}
+.table-responsive::-webkit-scrollbar-track {/*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(255,255,255,0.5);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
 /*弹窗*/
 .dim {
     z-index: 1;
@@ -208,6 +228,9 @@
 /*弹窗 end*/
 
 @media screen and (max-width: 1200px){
+    .main-box {
+        width: 100%;
+    }
     .tables {
         padding: 0 10px;
     }
@@ -235,10 +258,6 @@
     }
 }
 @media screen and (max-width: 767px){
-    .main-box {
-        width: 100%;
-        min-height: auto;
-    }
     .main-buy {
         padding: 20px 0;
     }

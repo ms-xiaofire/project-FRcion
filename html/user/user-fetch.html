@@ -142,7 +142,7 @@
                                         <td>张三</td>
                                         <td>https://www.baidu.com/</td>
                                         <td>已绑定</td>
-                                        <td><button type="button" class="green">删除</button></td>
+                                        <td><button type="button" class="green" id="removeAddress">删除</button></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -341,6 +341,21 @@
     </footer>
     <!--尾部 end-->
 </div>
+<!--删除提币地址-->
+<div class="removeAddress">
+    <div class="address-box">
+        <div class="address-title">
+            <span>删除提币地址</span>
+            <img src="../../images/close.png" class="removeClose">
+        </div>
+        <p class="removeHint">确认删除提币地址？</p>
+        <div class="address-bottom">
+            <button type="button" class="btn removeClose">取消</button>
+            <button type="button" class="btn btn-default" id="removeSure">确认</button>
+        </div>
+    </div>
+</div>
+<!--删除提币地址 end-->
 <!--新增币提现地址-->
 <div class="fetchAddress">
     <div class="address-box">
@@ -364,8 +379,8 @@
 </div>
 <!--新增币提现地址 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../component/layui-v2.3.0/layui/layui.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../component/modules.js"></script>
 <script src="../../js/users.js"></script>
 </body>

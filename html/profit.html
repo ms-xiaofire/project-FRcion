@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="../component/GB-canvas-turntable/GB-canvas-turntable.css">
     <link rel="stylesheet" href="../component/modules.css">
+    <link rel="stylesheet" href="../css/assetsOut.css">
     <link rel="stylesheet" href="../css/profit.css">
 </head>
 <body>
@@ -108,13 +109,18 @@
                     <p>我的奖池：<span>8862.3321</span></p>
                     <p>我的分红：<span>8862.3321</span></p>
                     <p>我的锁定：<span>8862.3321</span></p>
+                    <p>我的未锁定：<span>8862.3321</span></p>
                 </div>
                 <div class="timeDown">
-                    <div id="divTime"></div>
-                    <button type="button" id="profitIntro">超级分红介绍</button>
-                </div>
-                <div class="jackpot">
-                    <p>奖池：<span>9563，2244</span></p>
+                    <div class="jackpot">
+                        <div id="divTime"></div>
+                        <p>奖池：<span>9563，2244</span></p>
+                    </div>
+                    <div class="timeDown_right">
+                        <p>超级分红总资产：26586.9963</p>
+                        <button type="button" id="assetsOut">资产划转</button>
+                        <button type="button" id="profitIntro">超级分红介绍</button>
+                    </div>
                 </div>
                 <div class="states">
                     <div>
@@ -134,10 +140,18 @@
                     <button type="button" id="join">参与超级分红</button>
                 </div>
                 <div class="joinList">
-                    <p class="listTitle">参与超级分红列表</p>
-                    <p>张三<span>一分钟前参与了超级分红</span></p>
-                    <p>张三<span>一分钟前参与了超级分红</span></p>
-                    <p>张三<span>一分钟前参与了超级分红</span></p>
+                    <div>
+                        <p class="listTitle">参与超级分红列表</p>
+                        <p>张三<span>一分钟前参与了超级分红</span></p>
+                        <p>张三<span>一分钟前参与了超级分红</span></p>
+                        <p>张三<span>一分钟前参与了超级分红</span></p>
+                    </div>
+                    <div>
+                        <p class="listTitle">资产划转记录</p>
+                        <p>从超级分红总资产划转到账户资产100KEYS，实际到账90KEYS。</p>
+                        <p>从超级分红总资产划转到账户资产80KEYS，实际到账72KEYS。</p>
+                        <p>从账户资产划转到超级分红总资产150KEYS，实际到账135KEYS。</p>
+                    </div>
                 </div>
                 <div class="dish">
                     <div class="dish-title">
@@ -158,7 +172,7 @@
                         <div class="dish-right">
                             <p class="rule">抽奖规则</p>
                             <p>1.每周日晚上八点进行第一次抽奖</p>
-                            <p>2.半点半进行第二次抽奖</p>
+                            <p>2.八点半进行第二次抽奖</p>
                             <p>3.每人两次抽奖机会</p>
                             <p>4.参与转盘抽奖需支付100个KEYS</p>
                         </div>
@@ -349,6 +363,49 @@
     </footer>
     <!--尾部 end-->
 </div>
+<!--资产划转-->
+<div class="assetsOut assetsOut_set">
+    <div class="assetsOut_box">
+        <div class="assetsOut_title">
+            <span>资产划转</span>
+            <img src="../images/close.png" class="assetsOut_close">
+        </div>
+        <div class="assetsOut_to">
+            <span id="from_left">超级分红总资产</span>
+            <img src="../images/to.png" id="assetsTo">
+            <span id="to_right">账户资产</span>
+        </div>
+        <div class="outNum">
+            <span>划转数量</span>
+            <input type="number" id="outNum">
+        </div>
+        <div class="outNum_hint">
+            <span>可转数量：100.000000 KEYS</span>
+            <span class="red">手续费：10%</span>
+        </div>
+        <div class="assetsOut_btn">
+            <button type="button" class="btn assetsOut_close">取消</button>
+            <button type="button" id="assetsOut_btn" class="btn btn-default">确定</button>
+        </div>
+    </div>
+</div>
+<!--资产划转 end-->
+<!--资产划转确认-->
+<div class="assetsOut assetsConfirm">
+    <div class="assetsOut_box">
+        <div class="assetsOut_title">
+            <span>确认划转</span>
+            <img src="../images/close.png" class="assetsConfirm_close">
+        </div>
+        <div class="assetsConfirm_main">
+            <div>
+                确认要从您的<span id="formAccount"></span>划转<span id="confirmNum"></span>KEYS到您的<span id="toAccount"></span>中吗？此次划转共扣除<span id="charge"></span>KEYS
+            </div>
+            <button type="button" class="assetsConfirm_sure">确认</button>
+        </div>
+    </div>
+</div>
+<!--资产划转确认 end-->
 <!--参与超级分红-->
 <div class="superProfit">
     <div class="superProfit-box">
@@ -387,6 +444,7 @@
 <script src="../component/layui-v2.3.0/layui/layui.js"></script>
 <script src="../component/GB-canvas-turntable/GB-canvas-turntable.js"></script>
 <script src="../component/modules.js"></script>
+<script src="../js/assetsOut.js"></script>
 <script src="../js/profit.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -394,7 +452,7 @@
             id: 'turntable',
             config: function(callback){
                 // 获取奖品信息
-                callback && callback(['1元红包','2元红包','3元红包','4元红包','5元红包','6元红包','7元红包','8元红包']);
+                callback && callback(['','','','','','','','']);
             },
             getPrize: function(callback) {
                 // 获取中奖信息

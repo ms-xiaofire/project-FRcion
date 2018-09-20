@@ -201,26 +201,28 @@
      * @return {[type]} [description]
      */
     function events() {
-        bind(btn, 'click', function() {
-            /*      var prizeId,
-                      chances;*/
+        if(true) {
+            bind(btn, 'click', function() {
+                /*      var prizeId,
+                          chances;*/
 
-            addClass(btn, 'disabled');
+                addClass(btn, 'disabled');
 
-            fnGetPrize(function(data) {
-                optsPrize = {
-                    prizeId: data[0],
-                    chances: data[1]
-                }
-                // 计算旋转角度
-                deg = deg || 0;
-                deg = deg + (360 - deg % 360) + (360 * 10 - data[0] * (360 / num))
-                runRotate(deg);
+                fnGetPrize(function(data) {
+                    optsPrize = {
+                        prizeId: data[0],
+                        chances: data[1]
+                    }
+                    // 计算旋转角度
+                    deg = deg || 0;
+                    deg = deg + (360 - deg % 360) + (360 * 10 - data[0] * (360 / num))
+                    runRotate(deg);
+                });
+
+                // 中奖提示
+                bind(container, transitionEnd, eGot);
             });
-
-            // 中奖提示
-            bind(container, transitionEnd, eGot);
-        });
+        }
     }
 
     function eGot() {
