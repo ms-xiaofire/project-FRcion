@@ -109,6 +109,15 @@
 }
 .top-up {
     margin: 0 5px;
+    outline: none;
+}
+.yellow {
+    width: 56px;
+    color: #f5b22d!important;
+    display: inline-block;
+}
+#bindAddress {
+    margin-top: 20px;
 }
 /*账户资产 end*/
 /*分页*/
@@ -210,6 +219,7 @@
     border-radius: 10px;
     margin: 10px;
     overflow: hidden;
+    position: relative;
 }
 .fileInput{
     width: 230px;
@@ -217,6 +227,22 @@
     overflow: hidden;
     opacity: 0;
     cursor:pointer;
+    position: relative;
+    z-index: 10;
+}
+.upIdentity {
+    width: 120px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.upIdentity img {
+    margin-bottom: 10px;
+}
+.upIdentity div {
+    height: 20px;
 }
 /*实名认证 end*/
 /*充币*/

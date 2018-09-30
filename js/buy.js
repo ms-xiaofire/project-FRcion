@@ -138,9 +138,9 @@ var box = $('#chart').css('width');
 box = box.substring(0, box.length - 2);
 var kLineW = box - 2;
 var width = $(window).width();
-$(window).resize(function () {
-    window.location.reload();
-});
+// $(window).resize(function () {
+//     window.location.reload();
+// });
 var kline = new Kline({
     element: "#kline_container",
     width: kLineW,

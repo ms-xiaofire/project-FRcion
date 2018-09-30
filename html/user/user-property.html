@@ -156,6 +156,7 @@
                                     <td>
                                         <a href="user-topUp.html" class="green top-up">充币</a>
                                         <a href="user-fetch.html" class="orange top-up">提币</a>
+                                        <a href="#" class="top-up yellow" onclick="bindAddress(this)">已绑定</a>
                                     </td>
                                     <td><a href="../buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                                 </tr>
@@ -169,6 +170,7 @@
                                     <td>
                                         <a href="#" class="green top-up">充币</a>
                                         <a href="#" class="orange top-up">提币</a>
+                                        <a href="#" class="top-up yellow" onclick="bindAddress(this)">绑定地址</a>
                                     </td>
                                     <td><a href="../buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                                 </tr>
@@ -182,6 +184,7 @@
                                     <td>
                                         <a href="#" class="green top-up">充币</a>
                                         <a href="#" class="orange top-up">提币</a>
+                                        <a href="#" class="top-up yellow" onclick="bindAddress(this)">已绑定</a>
                                     </td>
                                     <td><a href="../buy/buying.html" class="btn btn-default goBuy">去交易</a></td>
                                 </tr>
@@ -334,6 +337,24 @@
     </div>
 </div>
 <!--资产划转确认 end-->
+<!--绑定钱包地址-->
+<div class="assetsOut bindAddress">
+    <div class="assetsOut_box">
+        <div class="assetsOut_title">
+            <span>绑定钱包地址</span>
+            <img src="../../images/close.png" class="bindAddress_close">
+        </div>
+        <div class="outNum">
+            <span>钱包地址</span>
+            <input type="text" placeholder="请输入要绑定的钱包地址" id="bindAddress">
+        </div>
+        <div class="assetsOut_btn">
+            <button type="button" class="btn bindAddress_close">取消</button>
+            <button type="button" id="bindAddress_btn" class="btn btn-default">确定</button>
+        </div>
+    </div>
+</div>
+<!--绑定钱包地址 end-->
 <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="../../component/layui-v2.3.0/layui/layui.js"></script>

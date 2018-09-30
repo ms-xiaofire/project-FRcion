@@ -17,11 +17,11 @@ $(document).ready(function () {
     }
     //语言选择框收起
     $(document).click(function () {
-        $('.tab-language').slideUp();
+        $('.tab-language').slideUp(300);
     });
     //选择语言
     $('#pc-language').click(function () {
-        $('.tab-language').slideToggle();
+        $('.tab-language').slideToggle(300);
         prevent(event);
     });
     $('.tab-language>li').click(function () {
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('#move-language').html(language);
     });
     $('#move-language').click(function () {
-        $('.tab-language').slideToggle();
+        $('.tab-language').slideToggle(300);
         prevent(event);
     });
     //在线客服悬浮窗
