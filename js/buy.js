@@ -40,6 +40,28 @@ $('#dealPrice').keyup(function () {
     let priceNum = Number(usable/unitPrice).toFixed(2);
     $('#dealPriceNum').text(priceNum);
 });
+//买入手续费和交易额
+$('#buyNum').blur(function () {
+    var buyPrice = $('#buyPrice').val();
+    var buyNum = $('#buyNum').val();
+    var buy_tips = $('#buy_tips').text();
+    if(buyPrice !== '') {
+        var buy_tip = buyPrice * buyNum * buy_tips/100;
+        $('#buy_tip').text(buy_tip);
+        var buy_num = buyPrice * buyNum;
+        $('#buy_num').text(buy_num);
+    }
+});
+//卖出手续费和交易额
+$('#dealNum').blur(function () {
+    var dealNum = $('#dealNum').val();
+    var sell_tips = $('#sell_tips').text();
+    if(dealNum !== '') {
+        var sell_tip = dealNum * sell_tips/100;
+        $('#sell_tip').text(sell_tip);
+        $('#sell_num').text(dealNum);
+    }
+});
 
 //撤销框显示
 $('#buy-button').click(function () {

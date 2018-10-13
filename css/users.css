@@ -86,8 +86,12 @@
     justify-content: space-between;
 }
 .myKEY p {
-    margin: 0 20px 0;
-    display: inline-block;
+    padding: 5px 0;
+    margin: 0 20px;
+}
+#transfer {
+    min-width: 56px;
+    cursor: pointer;
 }
 .myKEY p span {
     margin-right: 5px;
@@ -119,6 +123,31 @@
 #bindAddress {
     margin-top: 20px;
 }
+.transfer-main {
+    width: 75%;
+    margin: 30px auto;
+}
+.transfer-main div {
+    margin: 10px 0;
+    display: flex;
+}
+.transfer-main input, .transfer-main select {
+    flex: 1;
+    padding: 2px 5px;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+#part2::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    color: red;
+    /* placeholder字体大小  */
+    /*font-size: 12px;*/
+    /* placeholder位置  */
+    /*text-align: right;*/
+}
+
 /*账户资产 end*/
 /*分页*/
 .pagination {
@@ -243,6 +272,12 @@
 }
 .upIdentity div {
     height: 20px;
+}
+#frontImg, #reverseImg, #handImg {
+    width: 230px;
+    height: 150px;
+    position: absolute;
+    top: 0;
 }
 /*实名认证 end*/
 /*充币*/
@@ -521,6 +556,8 @@
     filter: blur(5px);
 }
 /*弹窗 end*/
+
+
 @media  screen and (max-width: 1275px){
     .mine-service {
         display: block;
@@ -564,6 +601,13 @@
     }
 }
 @media screen and (max-width: 480px){
+    .myKEY {
+        display: block;
+        text-align: center;
+    }
+    .transfer-main {
+        width: 85%;
+    }
     .user-body {
         width: auto;
         padding: 0 10px;

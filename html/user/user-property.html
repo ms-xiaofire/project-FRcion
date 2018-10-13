@@ -131,6 +131,9 @@
                             <p>已兑换：<span>8723，9523</span>KEYS</p>
                         </div>
                         <div>
+                            <p class="orangered" id="transfer">内部转账</p>
+                        </div>
+                        <div>
                             <button type="button" id="assetsOut">资产划转</button>
                         </div>
                     </div>
@@ -294,6 +297,44 @@
     <!--尾部 end-->
 </div>
 
+<!--内部转账-->
+<div class="assetsOut transfer">
+    <div class="assetsOut_box">
+        <div class="assetsOut_title">
+            <span>转账</span>
+            <img src="../../images/close.png" class="transfer_close">
+        </div>
+        <div class="transfer-main">
+            <div class="part1">
+                <label>可用余额：</label>
+                <span>0.00</span><span>USD</span>
+            </div>
+            <div class="part2">
+                <label>对方账户：</label>
+                <input type="text" placeholder="请输入对方ID" id="part2">
+            </div>
+            <div class="part3">
+                <label>对方账户：</label>
+                <select id="part3">
+                    <option>请选择币种</option>
+                    <option>USD</option>
+                </select>
+            </div>
+            <div class="part4">
+                <label>钱币数量：</label>
+                <input type="number" id="part4">
+            </div>
+            <div class="part5">
+                <label>交易密码：</label>
+                <input type="password" id="part5">
+            </div>
+        </div>
+        <div class="assetsOut_btn">
+            <button type="button" id="transfer_btn" class="btn btn-default">确定</button>
+        </div>
+    </div>
+</div>
+<!--内部转账 end-->
 <!--资产划转-->
 <div class="assetsOut assetsOut_set">
     <div class="assetsOut_box">

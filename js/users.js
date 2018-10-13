@@ -3,6 +3,47 @@ $(document).ready(function () {
     layui.use(['layer', 'form'], function(){
         var layer = layui.layer,form = layui.form;
     });
+    //内部转账
+    $('#transfer').click(function () {
+        $('#assets-dim').addClass('dim');
+        $('.transfer').show();
+    });
+    $('.transfer_close').click(function () {
+        $('#assets-dim').removeClass('dim');
+        $('.transfer').hide();
+    });
+    $('#transfer_btn').click(function () {
+        var part2 = $('#part2').val();
+        var part3 = $('#part3').val();
+        var part4 = $('#part4').val();
+        var part5 = $('#part5').val();
+        if(part2 === '') {
+            layer.alert('请输入对方ID！', {
+                icon: 2
+            })
+        }else if(part3 ==='' || part3 === '请选择币种') {
+            layer.alert('请选择币种！', {
+                icon: 2
+            })
+        }else if(part4 === '') {
+            layer.alert('请输入钱币数量！', {
+                icon: 2
+            })
+        }else if(part5 === '') {
+            layer.alert('请输入交易密码！', {
+                icon: 2
+            })
+        }else {
+            $('#part2').val('');
+            $('#part3').val('请选择币种');
+            $('#part4').val('');
+            $('#part5').val('');
+            $('#assets-dim').removeClass('dim');
+            $('.transfer').hide();
+            layer.msg('转账成功！');
+        }
+    });
+    //内部转账 end
     //修改密码
     $('.pwd-left').click(function () {
         $('.pwd-left').addClass('pwd-button');
@@ -152,6 +193,11 @@ $(document).ready(function () {
         $('.fetch-dim').removeClass('dim');
         $('.fetchAddress').hide();
     });
+    $('#coinNum').blur(function () {
+        let coinNum = $('#coinNum').val();
+        let actual = coinNum * 0.01;
+        $('#actual').val(actual.toFixed(2));
+    });
     $('#fetch').click(function () {
         let coinNum = $('#coinNum').val();
         let coinPwd = $('#coinPwd').val();
@@ -184,6 +230,7 @@ $(document).ready(function () {
             }
         }
     });
+
     //提币 end
     //用户中心
     $('.phone').click(function () {
@@ -238,4 +285,18 @@ $(document).ready(function () {
         $('.poster').hide();
     })
     // 邀请好友 end
+    //实名认证
+    var frontIMG = $('#frontImg').attr('src');
+    var reverseIMG = $('#reverseImg').attr('src');
+    if(frontIMG === '') {
+        $('#reverseIn').hide();
+    }else {
+        $('#reverseIn').show();
+    }
+    if(reverseIMG === '') {
+        $('#handIn').hide();
+    }else {
+        $('#handIn').show();
+    }
+    // 实名认证 end
 });

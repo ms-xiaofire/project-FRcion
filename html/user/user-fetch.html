@@ -131,14 +131,30 @@
                                 <table class="table">
                                     <thead>
                                     <tr>
+                                        <th>选择</th>
                                         <th>地址标签</th>
                                         <th>地址</th>
                                         <th>状态</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
-                                    <tbody>
+                                    <tbody id="optionAddress">
                                     <tr>
+                                        <td><input type="radio" name="optionAddress"></td>
+                                        <td>张三</td>
+                                        <td>https://www.baidu.com/</td>
+                                        <td>已绑定</td>
+                                        <td><button type="button" class="green" id="removeAddress">删除</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="optionAddress"></td>
+                                        <td>张三</td>
+                                        <td>https://www.baidu.com/</td>
+                                        <td>已绑定</td>
+                                        <td><button type="button" class="green" id="removeAddress">删除</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" name="optionAddress"></td>
                                         <td>张三</td>
                                         <td>https://www.baidu.com/</td>
                                         <td>已绑定</td>
@@ -162,7 +178,7 @@
                         </div>
                         <div>
                             <p>实际到账：</p>
-                            <input type="number" disabled="disabled">
+                            <input type="number" id="actual" readonly="readonly">
                             <p class="gray">手续费10%</p>
                         </div>
                         <div>
